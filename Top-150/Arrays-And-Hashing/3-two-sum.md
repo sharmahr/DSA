@@ -1,0 +1,51 @@
+
+
+# Intuition
+To solve the Two Sum problem, we can use a hashmap to store the elements of the array along with their indices. By doing so, we can quickly check if the complement (target - current element) exists in the hashmap. If it does, we have found the required pair of numbers.
+
+To remember this solution, think of using a hashmap to store the array elements and their indices, and then searching for the complement of each element in the hashmap.
+
+# Approach
+1. Create an empty hashmap called `map` to store the array elements as keys and their indices as values.
+2. Iterate through the array `nums` and for each element:
+   - If the element is not already present in the `map`, add it to the `map` with its index.
+3. Create an array `result` of size 2 to store the indices of the two numbers.
+4. Iterate through the array `nums` again and for each element:
+   - Calculate the complement `temp` by subtracting the current element from the `target`.
+   - If the complement exists in the `map` and its index is different from the current index, we have found the required pair.
+   - Store the current index and the complement's index in the `result` array.
+   - Break out of the loop since we have found the required pair.
+5. Return the `result` array containing the indices of the two numbers.
+
+# Complexity
+- Time complexity: $O(n)$, where $n$ is the length of the input array `nums`. We iterate through the array twice, once to populate the hashmap and once to find the complement.
+- Space complexity: $O(n)$, where $n$ is the length of the input array `nums`. In the worst case, all elements in the array are distinct, and we store them all in the hashmap.
+
+# Code
+```java
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        HashMap<Integer, Integer> map = new HashMap<>();
+        int[] result = new int[2];
+        
+        // Populate the hashmap with array elements and their indices
+        for (int i = 0; i < nums.length; i++) {
+            if (!map.containsKey(nums[i])) {
+                map.put(nums[i], i);
+            }
+        }
+
+        // Find the complement and store the indices in the result array
+        for (int i = 0; i < nums.length; i++) {
+            int complement = target - nums[i];
+            if (map.containsKey(complement) && i != map.get(complement)) {
+                result[0] = i;
+                result[1] = map.get(complement);
+                break;
+            }
+        }
+        
+        return result;
+    }
+}
+```

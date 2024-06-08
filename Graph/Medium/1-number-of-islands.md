@@ -53,5 +53,3 @@ class Solution {
     }
 }
 ```
-
-The code iterates through each cell in the grid. When it encounters a '1' cell, it increments the `count` and performs a DFS starting from that cell. The DFS marks the current cell as visited by changing its value to '0' and recursively explores the four adjacent cells. This process continues until all connected '1' cells are visited. Finally, the code returns the `count` as the number of islands.
