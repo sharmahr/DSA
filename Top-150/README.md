@@ -26,12 +26,12 @@
 # Sliding Window
 | Problem | Notes | Solution |
 |:-------------|:--------------:|-------------:|
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
+| [Best time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/) | Keep track of the minimum price seen so far and the maximum profit that can be made by selling at the current price. | [Solution](https://github.com/sharmahr/DSA/Top-150/Sliding-Window/1-best-time-to-buy-sell-stock.md) |
+| [Longest Substring without repeating characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) | Use a sliding window technique, where we maintain a set of characters seen so far in the current substring, and expand or shrink the window as needed to ensure that there are no repeating characters. | [Solution](https://github.com/sharmahr/DSA/Top-150/Sliding-Window/2-longest-substring-without-repeating-characters.md) |
+| [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/description/) | Use a sliding window technique, where we keep track of the maximum frequency of any character in the current window and the number of characters that need to be replaced to make the substring valid.| [Solution](https://github.com/sharmahr/DSA/Top-150/Sliding-Window/3-longest-repeating-character-replacement.md) |
+| [Permutation in string](https://leetcode.com/problems/permutation-in-string/) | Use a sliding window technique and compare the frequency of characters in the window with the frequency of characters in s1. If the frequencies match, then the window contains a permutation of s1. | [Solution](https://github.com/sharmahr/DSA/Top-150/Sliding-Window/4-permutation-of-string.md) |
+| [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/description/) | Use a sliding window technique along with two frequency maps to keep track of the characters in `t` and the characters in the current window. We can slide the window and update the frequency maps accordingly to find the minimum window that satisfies the condition. | [Solution](https://github.com/sharmahr/DSA/Top-150/Sliding-Window/5-minimum-window-substring.md) |
+| [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/description/) | Use a deque (double-ended queue) to store the indices of the elements in the current window. By maintaining the deque in a way that the front element is always the maximum value in the current window, we can efficiently find the maximum value for each window. | [Solution](https://github.com/sharmahr/DSA/Top-150/Sliding-Window/6-sliding-window-maximum.md) |
 
 
 ### Binary Search
