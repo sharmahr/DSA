@@ -34,10 +34,20 @@
 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/description/) | Use a deque (double-ended queue) to store the indices of the elements in the current window. By maintaining the deque in a way that the front element is always the maximum value in the current window, we can efficiently find the maximum value for each window. | [Solution](https://github.com/sharmahr/DSA/Top-150/Sliding-Window/6-sliding-window-maximum.md) |
 
 
+# Stack
+| Problem | Notes | Solution |
+|:-------------|:--------------:|-------------:|
+| [Valid Parenthesis](https://leetcode.com/problems/valid-parentheses/description/) | Use a stack data structure to keep track of the opening parentheses encountered in the string. When we come across a closing parenthesis, we check if it matches the last opening parenthesis in the stack. If it doesn't match, or if the stack is empty (meaning there are more closing parentheses than opening ones), then the string is invalid. | [Solution](https://github.com/sharmahr/DSA/Top-150/Stack/1-valid-parenthesis.md) |
+| [Min Stack](https://leetcode.com/problems/min-stack/) | Use a stack to store the elements and maintain a variable `min` to keep track of the minimum element at any given time. | [Solution](https://github.com/sharmahr/DSA/Top-150/Stack/2-min-stack.md) |
+| [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/description/) | Use a stack to evaluate the expression by pushing operands onto the stack and performing operations when an operator is encountered, using the operands from the top of the stack. | [Solution](https://github.com/sharmahr/DSA/Top-150/Stack/3-evaluate-reverse-polish-notation.md) |
+| [Generate Parenthesis](https://leetcode.com/problems/generate-parentheses/description/) | The key idea is to ensure that at any point in the recursion, the number of closing parentheses does not exceed the number of opening parentheses. This property ensures that the generated combinations are well-formed. | [Solution](https://github.com/sharmahr/DSA/Top-150/Stack/4-generate-parentheses.md) |
+| [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/description/) | Row 3, Cell 2 | [Solution](https://github.com/sharmahr/DSA/Top-150/Stack/5-daily-temperatures.md) |
+| [Car Fleet](https://leetcode.com/problems/car-fleet/description/) | The problem is to determine the number of car fleets that will arrive at the destination, given the positions and speeds of the cars. The key observation is that if a car catches up to another car or fleet, it will slow down to match their speed. This means that cars or fleets with the same time to reach the destination will form a single fleet. We can calculate the time it takes for each car to reach the destination and sort them in descending order. Then, we can iterate through the sorted times and group cars with the same time into a fleet. | [Solution](https://github.com/sharmahr/DSA/Top-150/Stack/6-car-fleet.md) |
+| [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/description/) | Use a stack to keep track of the indices of the bars that are part of the potential largest rectangle. We can iterate through the heights and update the area whenever we encounter a bar that ends a potential largest rectangle. | [Solution](https://github.com/sharmahr/DSA/Top-150/Stack/7-largest-rectangle-in-histogram.md) |
+
 ### Binary Search
 | Problem | Notes | Solution |
 |:-------------|:--------------:|-------------:|
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
 | Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
 | Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
 | Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
@@ -47,12 +57,17 @@
 ### Linked List
 | Problem | Notes | Solution |
 |:-------------|:--------------:|-------------:|
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
+| [Reverse a Linked List](https://leetcode.com/problems/reverse-linked-list/) | The intuition is to iteratively update the next pointers of each node to point to the previous node, effectively reversing the direction of the list. | [Solution](https://github.com/sharmahr/DSA/Top-150/Linked-List/1-reverse-linked-list.md) |
+| [Merge Two Sorted List](https://leetcode.com/problems/merge-two-sorted-lists/description/) | Compare the values of the nodes in the two input lists and add the smaller value node to the new list, while moving the pointer in the corresponding input list forward. | [Solution](https://github.com/sharmahr/DSA/Top-150/Linked-List/2-merge-two-sorted-list.md) |
+| [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/) | The idea is to use two pointers, one moving twice as fast as the other. If there is a cycle, the two pointers will eventually meet. If there is no cycle, the faster pointer will reach the end of the list first. | [Solution](https://github.com/sharmahr/DSA/Top-150/Linked-List/3-linked-list-cycle.md) |
+| [Reorder List](https://leetcode.com/problems/reorder-list/) | Split the list into two halves, reverse the second half, and then merge the two halves by interleaving the nodes. | [Solution](https://github.com/sharmahr/DSA/Top-150/Linked-List/4-reorder-list.md) |
+| [Remove Nth Node from the End](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/) | The intuition is to use two pointers, `first` and `second`, where `second` is initially ahead of `first` by `n` nodes. Then, move both pointers at the same pace until `second` reaches the end of the list. At this point, `first` will be pointing to the (n+1)th node from the end, and we can remove the next node (the nth node from the end). | [Solution](https://github.com/sharmahr/DSA/Top-150/Linked-List/5-remove-nth-node-from-end-of-list.md) |
+| [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/) | The intuition is to use a dictionary (HashMap) to map the original nodes to their corresponding copied nodes. We can then iterate through the original list, create copies of the nodes, and update the `next` and `random` pointers of the copied nodes based on the original nodes and the dictionary. | [Solution](https://github.com/sharmahr/DSA/Top-150/Linked-List/6-copy-list-with-random-pointer.md) |
+| [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | The intuition is to perform digit-wise addition, similar to how we add numbers on paper, and propagate the carry to the next digit. | [Solution](https://github.com/sharmahr/DSA/Top-150/Linked-List/7-add-two-numbers.md) |
+| [Find the duplicate number](https://leetcode.com/problems/find-the-duplicate-number/description/) | The intuition is to use the concept of linked lists to treat the array as a linked list with nodes pointing to the indices represented by their values. | [Solution](https://github.com/sharmahr/DSA/Top-150/Linked-List/8-find-the-duplicate-number.md) |
+| [LRU Cache](https://leetcode.com/problems/lru-cache/) | The intuition is to use a combination of a hash map (or dictionary) and a doubly-linked list to efficiently track the key-value pairs and their access order. | [Solution](https://github.com/sharmahr/DSA/Top-150/Linked-List/9-lru-cache.md) |
+| [Merge K sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/description/) | We can use a min-heap to efficiently find the node with the smallest value among all the linked lists and add it to the merged list. This way, we can merge all the linked lists in a single pass. | [Solution](https://github.com/sharmahr/DSA/Top-150/Linked-List/10-merge-k-sorted-list.md) |
+| [Reverse Nodes in K groups](https://leetcode.com/problems/reverse-nodes-in-k-group/description/) | The intuition is to use a recursive approach to reverse the first `k` nodes of the linked list, and then move to the next group of `k` nodes and repeat the process. We can keep track of the next group's starting node by maintaining a reference to the node right after the current group. | [Solution](https://github.com/sharmahr/DSA/Top-150/Linked-List/11-reverse-nodes-in-k-group.md) |
 
 ### Trees
 | Problem | Notes | Solution |

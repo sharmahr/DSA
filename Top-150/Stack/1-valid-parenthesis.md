@@ -1,0 +1,48 @@
+[Valid Parenthesis](https://leetcode.com/problems/valid-parentheses/description/)
+
+# Intuition
+<!-- Describe your first thoughts on how to solve this problem and a note to remember the solution -->
+The problem is to determine whether a given string of parentheses (round brackets `()`, square brackets `[]`, and curly braces `{}`) is valid or not. A valid string is one where the opening and closing parentheses are correctly matched and properly nested.
+
+The intuition is to use a stack data structure to keep track of the opening parentheses encountered in the string. When we come across a closing parenthesis, we check if it matches the last opening parenthesis in the stack. If it doesn't match, or if the stack is empty (meaning there are more closing parentheses than opening ones), then the string is invalid.
+
+# Approach
+<!-- Describe your approach to solving the problem. -->
+1. Initialize an empty stack.
+2. Iterate through each character `c` in the input string `s`.
+3. If `c` is an opening parenthesis (`(`, `[`, or `{`), push it onto the stack.
+4. If `c` is a closing parenthesis (`)`, `]`, or `}`):
+   a. If the stack is empty, return `false` (no matching opening parenthesis).
+   b. Pop the top element from the stack and check if it is the corresponding opening parenthesis for `c`.
+      - If it doesn't match, return `false`.
+5. After iterating through the entire string, if the stack is empty, return `true` (all parentheses are properly matched). Otherwise, return `false` (there are unmatched opening parentheses left in the stack).
+
+# Complexity
+- Time complexity: O(n)
+<!-- Add your time complexity here, e.g. $$O(n)$$ -->
+* Space complexity: O(n)
+<!-- Add your space complexity here, e.g. $$O(n)$$ -->
+The time complexity is O(n), where n is the length of the input string, because we iterate through the string once. The space complexity is also O(n) in the worst case, when all characters are opening parentheses, as we would need to store them all in the stack.
+
+# Code
+```java
+class Solution {
+    public boolean isValid(String s) {
+        Stack<Character> stack = new Stack<>();
+        for(char c: s.toCharArray()){
+            // now check if there is a valid parenthesis
+            if(c == '(' || c == '[' || c == '{'){
+                stack.push(c);
+            }else{
+                if(stack.isEmpty()) return false;
+                if((c == ')' && stack.pop() != '(')
+                    || (c == ']' && stack.pop() != '[')
+                    || (c == '}' && stack.pop() != '{')){
+                        return false;
+                }
+            }
+        }
+        return stack.isEmpty();
+    }
+}
+```
