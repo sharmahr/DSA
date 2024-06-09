@@ -45,7 +45,8 @@
 | [Car Fleet](https://leetcode.com/problems/car-fleet/description/) | The problem is to determine the number of car fleets that will arrive at the destination, given the positions and speeds of the cars. The key observation is that if a car catches up to another car or fleet, it will slow down to match their speed. This means that cars or fleets with the same time to reach the destination will form a single fleet. We can calculate the time it takes for each car to reach the destination and sort them in descending order. Then, we can iterate through the sorted times and group cars with the same time into a fleet. | [Solution](https://github.com/sharmahr/DSA/Top-150/Stack/6-car-fleet.md) |
 | [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/description/) | Use a stack to keep track of the indices of the bars that are part of the potential largest rectangle. We can iterate through the heights and update the area whenever we encounter a bar that ends a potential largest rectangle. | [Solution](https://github.com/sharmahr/DSA/Top-150/Stack/7-largest-rectangle-in-histogram.md) |
 
-### Binary Search
+
+# Binary Search
 | Problem | Notes | Solution |
 |:-------------|:--------------:|-------------:|
 | [Binary Search](https://leetcode.com/problems/binary-search/description/) | The intuition is to repeatedly divide the search interval in half by comparing the middle element with the target value. If the middle element is equal to the target, we have found the solution. If the target is greater than the middle element, we search in the right half of the interval. Otherwise, we search in the left half of the interval. | [Solution](https://github.com/sharmahr/DSA/Top-150/Binary-Search/1-binary-search.md) |
@@ -56,7 +57,8 @@
 | [Time Based Key Value Store](https://leetcode.com/problems/time-based-key-value-store/description/) | The intuition is to use a hash map to store the key-value pairs, where each key maps to a list of values along with their corresponding timestamps. To retrieve the value for a given key and timestamp, we can perform a binary search on the list of values to find the value with the highest timestamp less than or equal to the given timestamp. | [Solution](https://github.com/sharmahr/DSA/Top-150/Binary-Search/6-time-based-key-value-store.md) |
 | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/) | Perform a binary search on the smaller array to find the partition point that divides both arrays into left and right halves such that the elements in the left half are smaller than or equal to the elements in the right half. Once we find the correct partition, we can determine the median based on the maximum element in the left half and the minimum element in the right half. | [Solution](https://github.com/sharmahr/DSA/Top-150/Binary-Search/7-median-of-two-sorted-arrays.md) |
 
-### Linked List
+
+# Linked List
 | Problem | Notes | Solution |
 |:-------------|:--------------:|-------------:|
 | [Reverse a Linked List](https://leetcode.com/problems/reverse-linked-list/) | The intuition is to iteratively update the next pointers of each node to point to the previous node, effectively reversing the direction of the list. | [Solution](https://github.com/sharmahr/DSA/Top-150/Linked-List/1-reverse-linked-list.md) |
@@ -71,32 +73,29 @@
 | [Merge K sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/description/) | We can use a min-heap to efficiently find the node with the smallest value among all the linked lists and add it to the merged list. This way, we can merge all the linked lists in a single pass. | [Solution](https://github.com/sharmahr/DSA/Top-150/Linked-List/10-merge-k-sorted-list.md) |
 | [Reverse Nodes in K groups](https://leetcode.com/problems/reverse-nodes-in-k-group/description/) | The intuition is to use a recursive approach to reverse the first `k` nodes of the linked list, and then move to the next group of `k` nodes and repeat the process. We can keep track of the next group's starting node by maintaining a reference to the node right after the current group. | [Solution](https://github.com/sharmahr/DSA/Top-150/Linked-List/11-reverse-nodes-in-k-group.md) |
 
-### Trees
+
+# Trees
 | Problem | Notes | Solution |
 |:-------------|:--------------:|-------------:|
-| [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/description/) |  | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
+| [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/description/) | Perform a level-order traversal of the tree using a queue and swap the left and right child of each node as we visit it. | [Solution](https://github.com/sharmahr/DSA/Top-150/Tree/01-invert-binary-tree.md) |
+| [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | The maximum depth of a tree is the maximum depth of its left subtree or its right subtree, plus one (to account for the root node). We can recursively traverse the tree, calculate the maximum depth of the left and right subtrees, and return the maximum of the two depths plus one. | [Solution](https://github.com/sharmahr/DSA/Top-150/Tree/02-maximum-depth-of-binary-tree.md) |
+| [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/description/) | To find the diameter of a binary tree, consider three cases: the diameter passing through the root (sum of left and right subtree heights), or the diameter being entirely within the left or right subtree. Use recursion to calculate the maximum diameter among these cases. | [Solution](https://github.com/sharmahr/DSA/Top-150/Tree/03-diameter-of-binary-tree.md) |
+| [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/description/) | Calculate the heights of the left and right subtrees at each node and check if their difference is within the allowed range. If at any point the difference exceeds 1, the tree is not balanced. | [Solution](https://github.com/sharmahr/DSA/Top-150/Tree/04-balanced-binary-tree.md) |
+| [Same Tree](https://leetcode.com/problems/same-tree/description/) | Recursively compare the nodes and their left and right subtrees. | [Solution](https://github.com/sharmahr/DSA/Top-150/Tree/05-same-tree.md) |
+| [Subtree of another Tree](https://leetcode.com/problems/subtree-of-another-tree/description/) | We can recursively compare each node of the main tree with the root of the subtree. If we find a node in the main tree that is the same as the root of the subtree, we can then compare the entire subtree starting from that node. If any such comparison returns true, then the subtree exists within the main tree. | [Solution](https://github.com/sharmahr/DSA/Top-150/Tree/06-subtree-of-another-tree.md) |
+| [Lowest Common Ancestor of BST](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/) | The LCA is the node where the two nodes p and q diverge in the tree. | [Solution](https://github.com/sharmahr/DSA/Top-150/Tree/07-lowest-common-ancestor-of-bst.md ) |
+| [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description/) | Process the nodes level by level, starting from the root. At each level, we enqueue the nodes from left to right and process them in the order they were enqueued. This ensures that we visit the nodes in level order. | [Solution](https://github.com/sharmahr/DSA/Top-150/Tree/08-binary-tree-level-order-traversal.md) |
+| [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/description/) | To find the right side view of a binary tree, we can perform a level order traversal (breadth-first search) and keep track of the rightmost node at each level. The rightmost node at each level will be the one visible from the right side. We can use a queue to perform the level order traversal and add the last node at each level to the result list. | [Solution](https://github.com/sharmahr/DSA/Top-150/Tree/09-binary-tree-right-side-view.md) |
+| [Count Of Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/description/) | To count the number of good nodes in a binary tree, we can perform a depth-first search (DFS) traversal and keep track of the maximum value encountered so far along each path. If the current node's value is greater than or equal to the maximum value seen so far, it is considered a good node. We can recursively traverse the tree and update the maximum value at each step. | [Solution](https://github.com/sharmahr/DSA/Top-150/Tree/10-count-good-nodes-in-binary-tree.md) |
+| [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/description/) | Keep track of the valid range for each node based on its ancestors. The valid range for a node is determined by the minimum and maximum values allowed for it to satisfy the BST property. | [Solution](https://github.com/sharmahr/DSA/Top-150/Tree/11-validate-binary-search-tree.md) |
+| [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/) | By performing an in-order traversal and storing the elements in a list, we can easily retrieve the kth smallest element by accessing the element at index k-1 in the list. | [Solution](https://github.com/sharmahr/DSA/Top-150/Tree/12-kth-smallest-element-in-bst.md) |
+| [Construct Binary Tree from Inorder and Preorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/) | Create a map of the using the inorder array <val, index>, and then build tree recursively from the preorder by passing the start and end.| [Solution](https://github.com/sharmahr/DSA/Top-150/Tree/13-construct-binary-tree-from-inorder-and-preorder-traversal.md) |
+| [Maximum Path Sum in a Binary Tree](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | Row 3, Cell 2 | [Solution](https://github.com/sharmahr/DSA/Top-150/Tree/14-binary-tree-maximum-path-sum.md) |
+| [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/) | Row 3, Cell 2 | [Solution](https://github.com/sharmahr/DSA/Top-150/Tree/15-serialize-deserialize-binary-tree.md) |
 
 
 
-### Trees
+# Heap
 | Problem | Notes | Solution |
 |:-------------|:--------------:|-------------:|
 | Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
