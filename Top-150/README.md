@@ -1,26 +1,26 @@
 # Arrays And Hashing
 | Problem | Notes | Solution |
 |:-------------|:--------------:|-------------:|
-| [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/) | Use the input array itself as a hash table to keep track of the elements we have encountered so far. By negating the value at the index corresponding to each element, we can mark it as visited. If we encounter a negative value at an index, it means we have already visited that element before, indicating a duplicate. | [Solution](https://github.com/sharmahr/DSA/Neetcode-150/Arrays-And-Hashing/1-contains-duplicate.md) |
-| [Valid Anagram](https://leetcode.com/problems/valid-anagram/description/) | Count the frequency of each character in both strings and compare them or sort the strings and compare. | [Solution](https://github.com/sharmahr/DSA/Neetcode-150/Arrays-And-Hashing/2-valid-anagram.md) |
-| [Two Sum](https://leetcode.com/problems/two-sum/) | Use a hashmap to store the elements of the array along with their indices | [Solution](https://github.com/sharmahr/DSA/Neetcode-150/Arrays-And-Hashing/3-two-sum.md) |
-| [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Use a hashmap where the key is a sorted version of each word, and the value is a list of words that are anagrams of each other | [Solution](https://github.com/sharmahr/DSA/Neetcode-150/Arrays-And-Hashing/4-group-anagrams.md) |
-| [Top K frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | use a hash map to count the frequency of each element and then use a priority queue (min-heap) to keep track of the top k frequent elements. | [Solution](https://github.com/sharmahr/DSA/Neetcode-150/Arrays-And-Hashing/5-top-k-frequent-elements.md) |
-| [Encode and Decode Strings](https://neetcode.io/problems/string-encode-and-decode) | Use a delimiter to separate the individual strings and include the length of each string before the delimiter to facilitate the decoding process. | [Solution](https://github.com/sharmahr/DSA/Neetcode-150/Arrays-And-Hashing/6-encode-decode-strings.md) |
-| [Product of Array and Sef](https://leetcode.com/problems/product-of-array-except-self/description/) | Calculate the product of all the elements to the left of each index and the product of all the elements to the right of each index, and then multiply these two values to get the desired result. | [Solution](https://github.com/sharmahr/DSA/Neetcode-150/Arrays-And-Hashing/7-product-of-array-except-self.md) |
-| [Valid Sudodu](https://leetcode.com/problems/valid-sudoku/description/) | Check the validity of each row, column, and 3x3 block separately. We can use a set to keep track of the numbers encountered in each row, column, and block. | [Solution](https://github.com/sharmahr/DSA/Neetcode-150/Arrays-And-Hashing/8-valid-sudoku.md) |
-| [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/description/) | Use a hash set to store all the numbers in the array and then iterate through the set to find the longest consecutive sequence | [Solution](https://github.com/sharmahr/DSA/Neetcode-150/Arrays-And-Hashing/9-longest-consecutive-sequence.md) |
+| [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/) | Use the input array itself as a hash table to keep track of the elements we have encountered so far. By negating the value at the index corresponding to each element, we can mark it as visited. If we encounter a negative value at an index, it means we have already visited that element before, indicating a duplicate. | [Solution](https://github.com/sharmahr/DSA/Top-150/Arrays-And-Hashing/1-contains-duplicate.md) |
+| [Valid Anagram](https://leetcode.com/problems/valid-anagram/description/) | Count the frequency of each character in both strings and compare them or sort the strings and compare. | [Solution](https://github.com/sharmahr/DSA/Top-150/Arrays-And-Hashing/2-valid-anagram.md) |
+| [Two Sum](https://leetcode.com/problems/two-sum/) | Use a hashmap to store the elements of the array along with their indices | [Solution](https://github.com/sharmahr/DSA/Top-150/Arrays-And-Hashing/3-two-sum.md) |
+| [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Use a hashmap where the key is a sorted version of each word, and the value is a list of words that are anagrams of each other | [Solution](https://github.com/sharmahr/DSA/Top-150/Arrays-And-Hashing/4-group-anagrams.md) |
+| [Top K frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | use a hash map to count the frequency of each element and then use a priority queue (min-heap) to keep track of the top k frequent elements. | [Solution](https://github.com/sharmahr/DSA/Top-150/Arrays-And-Hashing/5-top-k-frequent-elements.md) |
+| [Encode and Decode Strings](https://neetcode.io/problems/string-encode-and-decode) | Use a delimiter to separate the individual strings and include the length of each string before the delimiter to facilitate the decoding process. | [Solution](https://github.com/sharmahr/DSA/Top-150/Arrays-And-Hashing/6-encode-decode-strings.md) |
+| [Product of Array and Sef](https://leetcode.com/problems/product-of-array-except-self/description/) | Calculate the product of all the elements to the left of each index and the product of all the elements to the right of each index, and then multiply these two values to get the desired result. | [Solution](https://github.com/sharmahr/DSA/Top-150/Arrays-And-Hashing/7-product-of-array-except-self.md) |
+| [Valid Sudodu](https://leetcode.com/problems/valid-sudoku/description/) | Check the validity of each row, column, and 3x3 block separately. We can use a set to keep track of the numbers encountered in each row, column, and block. | [Solution](https://github.com/sharmahr/DSA/Top-150/Arrays-And-Hashing/8-valid-sudoku.md) |
+| [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/description/) | Use a hash set to store all the numbers in the array and then iterate through the set to find the longest consecutive sequence | [Solution](https://github.com/sharmahr/DSA/Top-150/Arrays-And-Hashing/9-longest-consecutive-sequence.md) |
 
 
 
 # Two Pointers
 | Problem | Notes | Solution |
 |:-------------|:--------------:|-------------:|
-| [Valid Palidrome](https://leetcode.com/problems/valid-palindrome/description/) | Use two pointers, one starting from the beginning and the other from the end of the string, and move them inwards while skipping non-alphanumeric characters. | [Solution](https://github.com/sharmahr/DSA/Neetcode-150/Two-Pointers/1-valid-palindrome.md) |
-| [Two Sum Input Array is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | Use the two-pointer approach, where we start with two pointers, one at the beginning and one at the end of the array, and move them based on the sum of the elements they point to. | [Solution](https://github.com/sharmahr/DSA/Neetcode-150/Two-Pointers/2-two-sum-input-array-is-sorted.md) |
-| [3Sum](https://leetcode.com/problems/3sum/description/) | Extend the two-pointer approach used in the two-sum problem to solve this problem. We can first sort the array, and then fix one element at a time. For each fixed element, we can use the two-pointer technique to find the other two elements that sum up to the negative of the fixed element. | [Solution](https://github.com/sharmahr/DSA/Neetcode-150/Two-Pointers/3-3sum.md) |
-| [Container with Most Water](https://leetcode.com/problems/container-with-most-water/description/) | Use two pointers, one at the beginning and one at the end of the array, and move them inwards to find the maximum area. The area is determined by the smaller of the two heights and the distance between the two lines. | [Solution](https://github.com/sharmahr/DSA/Neetcode-150/Two-Pointers/4-container-with-most-water.md) |
-| [Rainwater Trapping](https://leetcode.com/problems/trapping-rain-water/description/) | Use two pointers, one starting from the left and the other from the right, and keep track of the maximum height seen from both sides. The amount of water trapped at any point is determined by the minimum of the maximum heights on both sides and the current height. | [Solution](https://github.com/sharmahr/DSA/Neetcode-150/Two-Pointers/5-trapping-rain-water.md) |
+| [Valid Palidrome](https://leetcode.com/problems/valid-palindrome/description/) | Use two pointers, one starting from the beginning and the other from the end of the string, and move them inwards while skipping non-alphanumeric characters. | [Solution](https://github.com/sharmahr/DSA/Top-150/Two-Pointers/1-valid-palindrome.md) |
+| [Two Sum Input Array is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | Use the two-pointer approach, where we start with two pointers, one at the beginning and one at the end of the array, and move them based on the sum of the elements they point to. | [Solution](https://github.com/sharmahr/DSA/Top-150/Two-Pointers/2-two-sum-input-array-is-sorted.md) |
+| [3Sum](https://leetcode.com/problems/3sum/description/) | Extend the two-pointer approach used in the two-sum problem to solve this problem. We can first sort the array, and then fix one element at a time. For each fixed element, we can use the two-pointer technique to find the other two elements that sum up to the negative of the fixed element. | [Solution](https://github.com/sharmahr/DSA/Top-150/Two-Pointers/3-3sum.md) |
+| [Container with Most Water](https://leetcode.com/problems/container-with-most-water/description/) | Use two pointers, one at the beginning and one at the end of the array, and move them inwards to find the maximum area. The area is determined by the smaller of the two heights and the distance between the two lines. | [Solution](https://github.com/sharmahr/DSA/Top-150/Two-Pointers/4-container-with-most-water.md) |
+| [Rainwater Trapping](https://leetcode.com/problems/trapping-rain-water/description/) | Use two pointers, one starting from the left and the other from the right, and keep track of the maximum height seen from both sides. The amount of water trapped at any point is determined by the minimum of the maximum heights on both sides and the current height. | [Solution](https://github.com/sharmahr/DSA/Top-150/Two-Pointers/5-trapping-rain-water.md) |
 
 
 # Sliding Window
@@ -48,11 +48,13 @@
 ### Binary Search
 | Problem | Notes | Solution |
 |:-------------|:--------------:|-------------:|
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
+| [Binary Search](https://leetcode.com/problems/binary-search/description/) | The intuition is to repeatedly divide the search interval in half by comparing the middle element with the target value. If the middle element is equal to the target, we have found the solution. If the target is greater than the middle element, we search in the right half of the interval. Otherwise, we search in the left half of the interval. | [Solution](https://github.com/sharmahr/DSA/Top-150/Binary-Search/1-binary-search.md) |
+| [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/) | The intuition is to treat the 2D matrix as a single sorted array and perform binary search on it. By flattening the matrix into a 1D array, we can leverage the existing binary search algorithm for sorted arrays or you can perform binary search without flattening the matrix just use the correct values of right and left. | [Solution](https://github.com/sharmahr/DSA/Top-150/Binary-Search/2-search-a-2d-matrix.md) |
+| [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/description/) | We can start with a minimum possible speed of 1 banana per hour and a maximum possible speed equal to the maximum pile size. Then, we can perform a binary search on the range of possible speeds and check if the current speed allows Koko to eat all the bananas within the given hour constraint. | [Solution](https://github.com/sharmahr/DSA/Top-150/Binary-Search/3-koko-eating-bananas.md) |
+| [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/) | Idea is to find the pivot point where the value transitions from a larger value to a smaller value. This pivot point is the minimum value in the rotated sorted array. | [Solution](https://github.com/sharmahr/DSA/Top-150/Binary-Search/4-find-minimum-in-rotated-sorted-array.md) |
+| [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/) | Identify which half of the array is sorted and determine if the target element lies within that sorted half. By comparing the middle element with the target and the endpoints of the current search range, we can recursively narrow down the search space until the target is found or the search range is exhausted. | [Solution](https://github.com/sharmahr/DSA/Top-150/Binary-Search/5-search-in-rotated-sorted-array.md) |
+| [Time Based Key Value Store](https://leetcode.com/problems/time-based-key-value-store/description/) | The intuition is to use a hash map to store the key-value pairs, where each key maps to a list of values along with their corresponding timestamps. To retrieve the value for a given key and timestamp, we can perform a binary search on the list of values to find the value with the highest timestamp less than or equal to the given timestamp. | [Solution](https://github.com/sharmahr/DSA/Top-150/Binary-Search/6-time-based-key-value-store.md) |
+| [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/) | Perform a binary search on the smaller array to find the partition point that divides both arrays into left and right halves such that the elements in the left half are smaller than or equal to the elements in the right half. Once we find the correct partition, we can determine the median based on the maximum element in the left half and the minimum element in the right half. | [Solution](https://github.com/sharmahr/DSA/Top-150/Binary-Search/7-median-of-two-sorted-arrays.md) |
 
 ### Linked List
 | Problem | Notes | Solution |
@@ -68,6 +70,52 @@
 | [LRU Cache](https://leetcode.com/problems/lru-cache/) | The intuition is to use a combination of a hash map (or dictionary) and a doubly-linked list to efficiently track the key-value pairs and their access order. | [Solution](https://github.com/sharmahr/DSA/Top-150/Linked-List/9-lru-cache.md) |
 | [Merge K sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/description/) | We can use a min-heap to efficiently find the node with the smallest value among all the linked lists and add it to the merged list. This way, we can merge all the linked lists in a single pass. | [Solution](https://github.com/sharmahr/DSA/Top-150/Linked-List/10-merge-k-sorted-list.md) |
 | [Reverse Nodes in K groups](https://leetcode.com/problems/reverse-nodes-in-k-group/description/) | The intuition is to use a recursive approach to reverse the first `k` nodes of the linked list, and then move to the next group of `k` nodes and repeat the process. We can keep track of the next group's starting node by maintaining a reference to the node right after the current group. | [Solution](https://github.com/sharmahr/DSA/Top-150/Linked-List/11-reverse-nodes-in-k-group.md) |
+
+### Trees
+| Problem | Notes | Solution |
+|:-------------|:--------------:|-------------:|
+| [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/description/) |  | Row 3, Cell 3 |
+| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
+| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
+| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
+| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
+| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
+| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
+| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
+| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
+| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
+| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
+| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
+| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
+| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
+| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
+| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
+| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
+| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
+| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
+
+
+
+### Trees
+| Problem | Notes | Solution |
+|:-------------|:--------------:|-------------:|
+| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
+| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
+| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
+| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
+| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
+| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
+
+
+### Trees
+| Problem | Notes | Solution |
+|:-------------|:--------------:|-------------:|
+| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
+| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
+| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
+| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
+| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
+| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
 
 ### Trees
 | Problem | Notes | Solution |
