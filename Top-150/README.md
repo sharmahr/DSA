@@ -126,6 +126,17 @@
 | [Word Ladder](https://leetcode.com/problems/word-ladder/description/) | we can use a breadth-first search (BFS) approach. We can treat each word as a node in a graph, and an edge exists between two words if they differ by exactly one letter. By performing BFS starting from `beginWord`, we can find the shortest path to reach `endWord`. | [Solution](https://github.com/sharmahr/DSA/blob/main/Top-150/Graphs/13-word-ladder.md) |
 
 
+# Advanced Graphs
+| Problem | Notes | Solution |
+|:-------------|:--------------:|-------------:|
+| [Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/description/) | Row 3, Cell 2 | [Solution](https://github.com/sharmahr/DSA/blob/main/Top-150/Advanced-Graphs/01-min-cost-to-connected-all-points.md) |
+| [Network Delay Time]() | Row 3, Cell 2 | [Solution](https://github.com/sharmahr/DSA/blob/main/Top-150/Advanced-Graphs/02-network-delay-time.md) |
+| Row 3, Cell 1 | Row 3, Cell 2 | [Solution](https://github.com/sharmahr/DSA/blob/main/Top-150/Advanced-Graphs/03-cheapest-flights-within-k-stops.md) |
+| Row 3, Cell 1 | Row 3, Cell 2 | [Solution](https://github.com/sharmahr/DSA/blob/main/Top-150/Advanced-Graphs/04-reconstruct-itinerary.md) |
+| Row 3, Cell 1 | Row 3, Cell 2 | [Solution](https://github.com/sharmahr/DSA/blob/main/Top-150/Advanced-Graphs/05-swim-in-rising-water.md) |
+| Row 3, Cell 1 | Row 3, Cell 2 | [Solution](https://github.com/sharmahr/DSA/blob/main/Top-150/Advanced-Graphs/06-alien-dictionary.md) |
+
+
 # Intervals
 | Problem | Notes | Solution |
 |:-------------|:--------------:|-------------:|
@@ -136,15 +147,6 @@
 | Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
 | Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
 
-# Graphs
-| Problem | Notes | Solution |
-|:-------------|:--------------:|-------------:|
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
 
 
 ### Trees
