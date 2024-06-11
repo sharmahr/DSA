@@ -189,12 +189,14 @@
 | Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
 | Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
 
-### Trees
+# Bit Manipulation
 | Problem | Notes | Solution |
 |:-------------|:--------------:|-------------:|
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
+| [Single Number](https://leetcode.com/problems/single-number/) | The intuition is to use the XOR operation, which has the following properties: XORing a number with itself results in 0. XORing a number with 0 results in the number itself. XORing is associative and commutative. | [Solution](https://github.com/sharmahr/DSA/blob/main/Top-150/Bit-Manipulation/01-single-number.md) |
+| [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | The intuitive approach is to perform a bitwise AND operation between the number and its predecessor, which will effectively turn off the rightmost '1' bit in each iteration. By counting the number of iterations required to reduce the number to zero, we can determine the count of '1' bits. | [Solution](https://github.com/sharmahr/DSA/blob/main/Top-150/Bit-Manipulation/02-number-of-1-bits.md) |
+| [Counting Bits](https://leetcode.com/problems/counting-bits/description/) | To solve this problem, we need to count the number of '1' bits in the binary representation of each number from 0 to n. The intuitive approach is to use the built-in `Integer.bitCount()` method in Java, which returns the number of one-bits in the two's complement binary representation of an integer. | [Solution](https://github.com/sharmahr/DSA/blob/main/Top-150/Bit-Manipulation/03-counting-bits.md) |
+| [Reverse Bits](https://leetcode.com/problems/reverse-bits/) | To reverse the bits of a given 32-bit unsigned integer, we can iterate over each bit from the least significant bit to the most significant bit. In each iteration, we extract the last bit of the input number, add it to the result, and then shift the input number to the right by 1 to process the next bit.
+ | [Solution](https://github.com/sharmahr/DSA/blob/main/Top-150/Bit-Manipulation/04-reverse-bits.md) |
+| [Missing Number](https://leetcode.com/problems/missing-number/) | To find the missing number in the given array, we can utilize the fact that the array contains all numbers from 0 to n except for one missing number. By calculating the expected sum of all numbers from 0 to n and subtracting the actual sum of the numbers in the array, we can determine the missing number. | [Solution](https://github.com/sharmahr/DSA/blob/main/Top-150/Bit-Manipulation/05-missing-number.md) |
+| [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/) | To calculate the sum of two integers without using the '+' operator, we can utilize bitwise operations. The key idea is to use the XOR operation to calculate the sum without considering the carry, and then use the AND operation to calculate the carry. We repeat this process until there is no carry left. | [Solution](https://github.com/sharmahr/DSA/blob/main/Top-150/Bit-Manipulation/06-sum-of-two-numbers.md) |
+| [Reverse Integer](https://leetcode.com/problems/reverse-integer/description/) | To reverse an integer, we can repeatedly extract the last digit of the number and append it to the reversed result. We need to handle the case of integer overflow by checking if the reversed result exceeds the range of a 32-bit signed integer. | [Solution](https://github.com/sharmahr/DSA/blob/main/Top-150/Bit-Manipulation/07-reverse-integer.md) |
