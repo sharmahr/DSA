@@ -156,15 +156,20 @@
 
 
 
-### Trees
+# 2-D DP
 | Problem | Notes | Solution |
 |:-------------|:--------------:|-------------:|
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
+| [Unique Paths](https://leetcode.com/problems/unique-paths/) | The intuition behind the solution is that the number of unique paths to reach any cell in the grid is the sum of the number of unique paths from the cell above it and the cell to its left. We can build a 2D array to store the number of unique paths for each cell and fill it in a bottom-up manner. | [Solution](https://github.com/sharmahr/DSA/blob/main/Top-150/2-D-DP/01-unique-paths.md) |
+| [Longest Increasing Subsequence](https://leetcode.com/problems/longest-common-subsequence/description/) | The intuition behind the solution is to build a 2D DP table where each cell represents the length of the LCS between the prefixes of the two strings up to the corresponding indices. We can fill the DP table in a bottom-up manner by considering the characters of both strings and making decisions based on whether they match or not. | [Solution](https://github.com/sharmahr/DSA/blob/main/Top-150/2-D-DP/02-longest-common-subsequence.md) |
+| [Best Time to Buy and Sell Stocks](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/description/) | The intuition behind the solution is to consider two states at each step: either the person is holding a stock or not holding a stock. We can make decisions based on these states and the current price, while also considering the cooldown constraint. | [Solution](https://github.com/sharmahr/DSA/blob/main/Top-150/2-D-DP/03-best-time-to-buy-sell-stocks-with-cooldown.md) |
+| [Coin Change](https://leetcode.com/problems/coin-change-ii/description/) | The intuition behind the solution is to consider each coin denomination and determine the number of ways to make up the remaining amount using the available coins. We can solve this problem by breaking it down into smaller subproblems and using the results of those subproblems to solve the larger problem. | [Solution](https://github.com/sharmahr/DSA/blob/main/Top-150/2-D-DP/04-coin-change-2.md) |
+| [Target Sum](https://leetcode.com/problems/target-sum/description/) | The intuition behind the solution is to consider the problem as a subset sum problem. We can partition the array into two subsets, one with positive integers and the other with negative integers, such that the sum of the positive subset minus the sum of the negative subset equals the target sum. | [Solution](https://github.com/sharmahr/DSA/blob/main/Top-150/2-D-DP/05-target-sum.md) |
+| [Interleaving Strings](https://leetcode.com/problems/interleaving-string/description/) | The intuition behind the solution is to consider the characters of s1 and s2 one by one and check if they match the characters of s3 in a valid interleaving order. We can solve this problem by breaking it down into smaller subproblems and using the results of those subproblems to solve the larger problem. | [Solution](https://github.com/sharmahr/DSA/blob/main/Top-150/2-D-DP/06-interleaving-strings.md) |
+| [Edit Distance](https://leetcode.com/problems/edit-distance/description/) | The intuition behind the solution is to consider the characters of both strings one by one and make decisions based on whether they match or not. We can solve this problem by breaking it down into smaller subproblems and using the results of those subproblems to solve the larger problem. | [Solution](https://github.com/sharmahr/DSA/blob/main/Top-150/2-D-DP/07-edit-distance.md) |
+| [Longest Increasing Path in a Matrix]() | Row 3, Cell 2 | [Solution](https://github.com/sharmahr/DSA/blob/main/Top-150/2-D-DP/08-longest-increasing-path-in-a-matrix.md) |
+| [Distinct Subsequence]() | Row 3, Cell 2 | [Solution](https://github.com/sharmahr/DSA/blob/main/Top-150/2-D-DP/09-distinct-subsequences.md) |
+| [Burst Ballons]() | Row 3, Cell 2 | [Solution](https://github.com/sharmahr/DSA/blob/main/Top-150/2-D-DP/10-burst-ballons.md) |
+| [Regular Expression Matching]() | Row 3, Cell 2 | [Solution](https://github.com/sharmahr/DSA/blob/main/Top-150/2-D-DP/11-regular-expression-matching.md) |
 
 ### Trees
 | Problem | Notes | Solution |
