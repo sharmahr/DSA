@@ -1,0 +1,7 @@
+# Tries
+| Problem | Notes | Solution |
+|:-------------|:--------------:|-------------:|
+| [Implement Trie Prefix Tree](https://leetcode.com/problems/implement-trie-prefix-tree/description/) | The intuition behind using a Trie is to represent each character of a string as a node in the tree, with each node potentially having multiple child nodes representing the next characters in the string. By traversing the tree, we can efficiently perform operations like insertion, search, and prefix matching.
+ | [Solution](https://github.com/sharmahr/DSA/blob/main/Top-150/Tries/01-implement-trie-prefix-tree.md) |
+| [Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure/description/) | The intuition is to store the words in a Trie, where each node represents a character and the end of a word is marked with a special flag. To handle wildcards ('.') during the search, we need to modify the search function to explore all possible paths in the Trie when encountering a wildcard. | [Solution](https://github.com/sharmahr/DSA/blob/main/Top-150/Tries/02-design-add-and-search-words-data-structure.md) |
+| [Word Search 2](https://leetcode.com/problems/word-search-ii/description/) | The intuition is to build a Trie with the given words and then perform DFS on the board to explore all possible paths and check if any word from the Trie can be formed along the path. | [Solution](https://github.com/sharmahr/DSA/blob/main/Top-150/Tries/03-word-search-2.md) |
