@@ -1,0 +1,72 @@
+[Spiral Matrix](https://leetcode.com/problems/spiral-matrix/description/)
+
+
+# Intuition
+The problem is to traverse a matrix in a spiral order, starting from the top-left corner, moving clockwise, and adding each element visited to a result list. The intuition is to use four pointers (`left`, `right`, `top`, `bottom`) to keep track of the boundaries of the matrix and traverse the elements in a spiral manner.
+
+# Approach
+1. Initialize an empty list `result` to store the elements in spiral order.
+2. Check if the matrix is null, empty, or has no columns. If so, return the empty `result` list.
+3. Initialize four pointers: `left` (starting column), `right` (ending column), `top` (starting row), and `bottom` (ending row).
+4. While `top` is less than `bottom` and `left` is less than `right`, perform the following steps:
+   - Traverse the top row from left to right and add each element to `result`.
+   - Increment `top` to move to the next row.
+   - Traverse the right column from top to bottom and add each element to `result`.
+   - Decrement `right` to move to the previous column.
+   - Check if there are any remaining elements to traverse (i.e., `left < right` and `top < bottom`). If not, break the loop.
+   - Traverse the bottom row from right to left and add each element to `result`.
+   - Decrement `bottom` to move to the previous row.
+   - Traverse the left column from bottom to top and add each element to `result`.
+   - Increment `left` to move to the next column.
+5. Return the `result` list containing the elements in spiral order.
+
+# Complexity
+- Time complexity: $O(m \times n)$, where $m$ and $n$ are the number of rows and columns in the matrix, respectively.
+  - We visit each element in the matrix exactly once.
+- Space complexity: $O(1)$, excluding the space required for the output list.
+  - We use only a constant amount of extra space for the four pointers and loop variables.
+
+# Code
+```java
+class Solution {
+    public List<Integer> spiralOrder(int[][] matrix) {
+        List<Integer> result = new ArrayList<Integer>();
+        if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
+            return result;
+        }
+
+        int left = 0, right = matrix[0].length, top = 0, bottom = matrix.length;
+
+        while (top < bottom && left < right) {
+            // every i in the top row
+            for (int i = left; i < right; i++) {
+                result.add(matrix[top][i]);
+            }
+            top += 1; // update the top pointer
+
+            // every i in the right col
+            for (int i = top; i < bottom; i++) {
+                result.add(matrix[i][right - 1]);
+            }
+            right -= 1; // update the right pointer
+
+            if (!(left < right && top < bottom)) {
+                break;
+            }
+
+            // every i in the bottom row
+            for (int i = right - 1; i >= left; i--) {
+                result.add(matrix[bottom - 1][i]);
+            }
+            bottom -= 1; // update the bottom pointer
+
+            // every i in the left col
+            for (int i = bottom - 1; i >= top; i--) {
+                result.add(matrix[i][left]);
+            }
+            left += 1; // update the left pointer
+        }
+        return result;
+    }
+}
+```
