@@ -207,15 +207,15 @@
 | [Valid Parenthesis](https://leetcode.com/problems/valid-parenthesis-string/) | The intuition is that for each character in the string, we update the minimum and maximum counts based on the character. If the maximum count becomes negative at any point, it means there are too many closing parentheses, and the string is invalid. If the minimum count becomes negative, we reset it to 0 since we can consider the asterisks as empty. At the end, if the minimum count is 0, it means all open parentheses are matched, and the string is valid. | [Solution](https://github.com/sharmahr/DSA/blob/main/Top-150/Greedy/08-valid-parenthesis-string.md) |
 
 
-### Trees
+# Intervals
 | Problem | Notes | Solution |
 |:-------------|:--------------:|-------------:|
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
-| Row 3, Cell 1 | Row 3, Cell 2 | Row 3, Cell 3 |
+| [Meeting Schedule](https://neetcode.io/problems/meeting-schedule) | The intuition is that by sorting the intervals based on start times, we can easily check for overlaps by comparing the end time of one interval with the start time of the next interval. | [Solution](https://github.com/sharmahr/DSA/blob/main/Top-150/Intervals/1-meeting-rooms.md) |
+| [Insert Interval](https://leetcode.com/problems/insert-interval/) | To insert a new interval into a list of non-overlapping intervals, we can iterate through the existing intervals and merge the new interval with any overlapping intervals. The intuition is to find the appropriate position to insert the new interval and merge it with any overlapping intervals. | [Solution](https://github.com/sharmahr/DSA/blob/main/Top-150/Intervals/2-insert-interval.md) |
+| [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | To merge overlapping intervals, we can sort the intervals based on their start times and then iterate through the sorted intervals. If the current interval's start time is less than or equal to the end time of the previous interval, we merge them by updating the end time of the previous interval to the maximum of the two end times. Otherwise, we add the previous interval to the result list and update the previous interval to the current interval. | [Solution](https://github.com/sharmahr/DSA/blob/main/Top-150/Intervals/3-merge-intervals.md) |
+| [Non Overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) | The intuition is to sort the intervals based on their end times and then iterate through the sorted intervals. If the current interval overlaps with the previous interval, we remove the current interval. Otherwise, we keep the current interval and update the end time of the previous interval to the end time of the current interval. | [Solution](https://github.com/sharmahr/DSA/blob/main/Top-150/Intervals/4-non-overlapping-intervals.md) |
+| [Meeting Rooms 2](https://neetcode.io/problems/meeting-schedule-ii) | To find the minimum number of meeting rooms required, we can use a min-heap to keep track of the end times of ongoing meetings. The intuition is to sort the intervals by start time and then iterate through them. For each interval, if the earliest meeting in the min-heap has ended before the current meeting starts, we can reuse that room. Otherwise, we need to allocate a new room. The size of the min-heap at the end represents the minimum number of rooms required. | [Solution](https://github.com/sharmahr/DSA/blob/main/Top-150/Intervals/5-meeting-rooms-2.md) |
+| [Minimum Interval to include each Query](https://leetcode.com/problems/minimum-interval-to-include-each-query/) | To find the size of the smallest interval that contains each query value, we can use a min-heap to keep track of the intervals sorted by their size. The intuition is to sort both the intervals and queries, then iterate through the queries. For each query, we add all the intervals whose start time is less than or equal to the query value to the min-heap. We remove the intervals whose end time is less than the query value from the min-heap. The top of the min-heap will be the smallest interval that contains the query value. | [Solution](https://github.com/sharmahr/DSA/blob/main/Top-150/Intervals/6-minimum-interval-to-include-each-query.md) |
 
 ### Trees
 | Problem | Notes | Solution |
