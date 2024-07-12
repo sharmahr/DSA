@@ -1,0 +1,258 @@
+
+
+# Arrays/String
+| Problem | Notes | Solution |
+|:-------------|:--------------:|-------------:|
+| [Merge Sorted Arrays](https://leetcode.com/problems/merge-sorted-array/description/?envType=study-plan-v2&envId=top-interview-150) | Merge the two sorted arrays in reverse order to avoid overwriting elements in `nums1`. This way, we can directly place the largest element from the end of either array into the end of `nums1`. | [Solution](./Array/01.meger-sorted-array.md) |
+| [Remove Element](https://leetcode.com/problems/remove-element/description/?envType=study-plan-v2&envId=top-interview-150)  | Remove all occurrences of a given value from an array in-place, minimizing the number of operations. Using a priority queue might be a straightforward approach but not optimal for this problem. Instead, a two-pointer technique would be more efficient. |  [Solution](./Array/02.remove-element.md)  |
+| [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/?envType=study-plan-v2&envId=top-interview-150) | The key insight is to use two pointers: one to iterate through the array and another to keep track of where to place the next unique element. Remember that we're modifying the array in-place and returning the length of the modified array.| [Solution](./Array/03.remove-duplicates-from-sorted-array.md) |
+| [Remove Duplicates from Sorted Array 2](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/description/?envType=study-plan-v2&envId=top-interview-150) | The key insight is to use two pointers: one to iterate through the array and another to keep track of where to place the next valid element. Remember that we're comparing with the second-last placed element to allow up to two occurrences. | [Solution](./Array/04.remove-duplicates-from-sorted-array-2.md) |
+| [Majority Element](https://leetcode.com/problems/majority-element/description/?envType=study-plan-v2&envId=top-interview-150) | A straightforward approach is to count the occurrences of each element and then find the one with the maximum count. A HashMap can be used for efficient counting. | [Solution](./Array/05.majority-element.md) |
+| [Rotate Array](https://leetcode.com/problems/rotate-array/description/?envType=study-plan-v2&envId=top-interview-150) | This problem is about rotating an array to the right by k steps. The key insight is that rotating an array is equivalent to reversing specific portions of the array. Remember: reverse the whole array, then reverse the first k elements, and finally reverse the rest. | [Solution](./Array/06.rotate-array.md) |
+| [Best Time to buy and sell stocks](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/?envType=study-plan-v2&envId=top-interview-150) | The key insight is that we need to find the largest difference between two numbers in the array, where the smaller number comes before the larger number. Remember: we're always looking for the lowest buying price up to the current day and the highest profit we can make by selling on the current day.  | [Solution](./Array/07.best-time-to-buy-sell-stocks.md) |
+| [Best Time to buy and Sell Stock 2](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/?envType=study-plan-v2&envId=top-interview-150) |  The key insight is to use a stack to keep track of future prices and identify profitable transactions. Remember: we're looking for any price increase between adjacent days, as we can buy and sell multiple times. | [Solution](./Array/08.best-time-to-buy-sell-stocks-2.md) |
+| [Jump Game](https://leetcode.com/problems/jump-game/description/?envType=study-plan-v2&envId=top-interview-150) | The key insight is to use dynamic programming with memoization to avoid redundant calculations. Remember: we can break down the problem into subproblems for each index, asking "Can we reach the end from here?" | [Solution](./Array/09.jump-game.md) |
+| [Jump Game 2](https://leetcode.com/problems/jump-game-ii/description/?envType=study-plan-v2&envId=top-interview-150) | The key insight is to use a greedy approach, always jumping to the position that allows us to reach the farthest. Remember: we're not just looking at the immediate next jump, but the farthest we can reach from all positions within our current jump range.  |  [Solution](./Array/10.jump-game-2.md)  |
+| [H Index](https://leetcode.com/problems/h-index/description/?envType=study-plan-v2&envId=top-interview-150) | The h-index problem requires finding the maximum value h where the researcher has published at least h papers that have each been cited at least h times. The key insight is to sort the citations in descending order and then find the point where the citation count becomes less than the paper index. Remember: the h-index is the largest number where citations[h-1] >= h. | [Solution](./Array/11.h-index.md) |
+| [Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/description/?envType=study-plan-v2&envId=top-interview-150) | The key insight is to use a combination of an ArrayList for constant-time access to elements and a HashMap for constant-time lookups. Remember: we can achieve O(1) removal by swapping the element to be removed with the last element in the list. | [Solution](./Array/12.insert-delete-getrandom.md)  |
+| [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/?envType=study-plan-v2&envId=top-interview-150) | The key insight is to use prefix and suffix products. Remember: for each element, its result is the product of all elements before it multiplied by the product of all elements after it. | [Solution](./Array/13.product-of-array-except-self.md) |
+| [Gas Station](https://leetcode.com/problems/gas-station/?envType=study-plan-v2&envId=top-interview-150) | The key insight is that if the total gas is greater than or equal to the total cost, a solution exists. Remember: if we can't reach a station from the current start, any station in between can't be the start either. | [Solution](./Array/14.gas-station.md) |
+| [Candy](https://leetcode.com/problems/candy/description/?envType=study-plan-v2&envId=top-interview-150) | To distribute candies to children such that each child has at least one candy and children with higher ratings get more candies than their neighbors, we can use a two-pass approach. First, we ensure that children with higher ratings than the previous child get more candies, and then we ensure the same condition but in reverse order to handle cases where a child might need more candies than previously assigned. | [Solution](./Array/15.candy.md) |
+| [Trapping Rainwater](https://leetcode.com/problems/trapping-rain-water/?envType=study-plan-v2&envId=top-interview-150) | The problem involves finding how much water can be trapped between bars of different heights after a rain. Initially, we can think about the fact that water trapped above a bar depends on the height of the tallest bars to its left and right. By maintaining two pointers from both ends of the array and keeping track of the maximum heights seen so far, we can efficiently calculate the trapped water. | [Solution](./Array/16.trapping-rain-water.md) |
+| [Roman To Integer](https://leetcode.com/problems/roman-to-integer/?envType=study-plan-v2&envId=top-interview-150) | To convert a Roman numeral to an integer, we need to understand the values of the individual Roman numeral characters and how they interact. Typically, Roman numerals are added from left to right. However, if a smaller numeral appears before a larger numeral, it is subtracted from the larger one. This leads us to consider both addition and subtraction depending on the order of the numerals. | [Solution](./Array/17.roman-to-integer.md) |
+| [Integer to Roman](https://leetcode.com/problems/integer-to-roman/?envType=study-plan-v2&envId=top-interview-150) | To convert an integer to its Roman numeral representation, we need to map specific integer values to their corresponding Roman numeral symbols. By repeatedly subtracting the largest possible Roman numeral value from the integer and appending the corresponding symbol to the result string, we can build the Roman numeral representation. | [Solution](./Array/18.integer-to-roman.md) |
+| [Length Of Last Word](https://leetcode.com/problems/length-of-last-word/description/?envType=study-plan-v2&envId=top-interview-150) | Find the length of the last word | [Solution](./Array/19.length-of-last-word.md) |
+| [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/?envType=study-plan-v2&envId=top-interview-150) | To find the longest common prefix among a list of strings, we need to identify the longest initial sequence of characters that is shared among all the strings. This involves comparing characters at each position across all strings until a mismatch is found or the end of the shortest string is reached. | [Solution](./Array/20.longest-common-prefix.md) |
+| [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/?envType=study-plan-v2&envId=top-interview-150) | The problem involves reversing the order of words in a string while ensuring that the words themselves remain unchanged. Splitting the string by spaces and then reversing the order of the resulting words is a straightforward approach to solving this problem. | [Solution](./Array/21.reverse-words-in-a-string.md) |
+| [Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion/description/?envType=study-plan-v2&envId=top-interview-150) | To convert a string into a zigzag pattern and then read it row by row, we need to understand how the characters are positioned in each row when written in a zigzag. The characters follow a specific pattern that can be replicated using careful indexing.  | [Solution](./Array/22.zigzag-conversion.md) |
+| [Find the index of the first occurance in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/?envType=study-plan-v2&envId=top-interview-150) | The problem involves finding the first occurrence of a substring (`needle`) within a string (`haystack`). A straightforward approach is to iterate through the `haystack` and compare substrings of the same length as `needle` to see if they match. | [Solution](./Array/23.find-the-index-of-the-first-occuranc-in-a-string.md) |
+| [Text Justification](https://leetcode.com/problems/text-justification/?envType=study-plan-v2&envId=top-interview-150) |  The problem requires formatting a list of words such that each line has exactly `maxWidth` characters and is fully justified (i.e., spaces are distributed as evenly as possible). This involves handling both the normal lines and the last line differently. | [Solution](./Array/24.text-justification.md)  |
+
+# Two Pointers
+| Problem | Notes | Solution |
+|:-------------|:--------------:|-------------:|
+| [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/description/?envType=study-plan-v2&envId=top-interview-150) | To determine if a string is a palindrome, we need to consider only alphanumeric characters and ignore cases. This means we should be able to compare characters from the start and end of the string moving towards the center, skipping non-alphanumeric characters and ignoring their case. | [Solution](./Two-Pointers/01.valid-palindrome.md) |
+| [Is Subsequence](https://leetcode.com/problems/is-subsequence/description/?envType=study-plan-v2&envId=top-interview-150) | The problem requires determining if string `s` is a subsequence of string `t`, meaning that `s` can be derived from `t` by deleting some characters without changing the order of the remaining characters. | [Solution](./Two-Pointers/02.is-subsequence.md) |
+| [Two Sum when input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/?envType=study-plan-v2&envId=top-interview-150) | The problem requires finding two numbers in a sorted array (`numbers`) that add up to a specific target value. This can be efficiently achieved using a two-pointer technique due to the sorted nature of the array. | [Solution](./Two-Pointers/03.two-sum-input-array-is-sorted.md)|
+| [Container with Most Water](https://leetcode.com/problems/container-with-most-water/description/?envType=study-plan-v2&envId=top-interview-150) |  The problem is to find the maximum area that can be formed between two vertical lines in a histogram represented by an array where the x-axis represents positions and the y-axis represents the heights of bars. The area is determined by the shorter line's height and the distance between the lines. | [Solution](./Two-Pointers/04.container-with-most-water.md)|
+| [3 Sum](https://leetcode.com/problems/3sum/?envType=study-plan-v2&envId=top-interview-150)  | The problem requires finding all unique triplets in an array that sum up to zero. Given the sorted nature of the array after sorting, we can efficiently find these triplets using a two-pointer technique. | [Solution](./Two-Pointers/05.3sum.md)|
+
+
+
+
+# Sliding Window
+| Problem | Notes | Solution |
+|:-------------|:--------------:|-------------:|
+| [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/description/?envType=study-plan-v2&envId=top-interview-150) | The problem requires finding the minimum length of a contiguous subarray in which the sum is greater than or equal to a given target value. This is a classic sliding window problem where we maintain a window of elements and adjust it based on the sum of elements inside the window. | [Solution](./Sliding-Window/01.minimum-size-subarray-sum.md)|
+| [Longest Substring without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/?envType=study-plan-v2&envId=top-interview-150) | The problem requires finding the length of the longest substring without repeating characters. The immediate thought is to use a sliding window approach, where we maintain a window that keeps track of the characters currently in the substring. As we expand the window, we check for duplicates and adjust the window accordingly. | [Solution](./Sliding-Window/02.longest-substring-without-repeating-characters.md) |
+| [Subtring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/?envType=study-plan-v2&envId=top-interview-150) | This problem involves finding all starting indices of substrings in s that are a concatenation of all words in the given array. The key insight is to use a sliding window approach combined with hash maps to efficiently check for valid concatenations. Remember: we need to consider all possible starting positions within the first word length.  | [Solution](./Sliding-Window/03.substring-with-concatenation-of-all-words.md)|
+| [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/?envType=study-plan-v2&envId=top-interview-150) | This problem involves finding the minimum window in string S which contains all the characters of string T. The key insight is to use a sliding window approach with two pointers (left and right) and hash maps to keep track of character frequencies. Remember: we need to expand the window until we have all required characters, then contract it to find the minimum valid window. | [Solution](./Sliding-Window/04.minimum-window-substring.md)|
+
+# Matrix
+| Problem | Notes | Solution |
+|:-------------|:--------------:|-------------:|
+| [Valid Sudodu](https://leetcode.com/problems/valid-sudoku/description/) | The intuitive approach is to check the validity of each row, column, and 3x3 block separately. We can use a set to keep track of the numbers encountered in each row, column, and block. If we come across a number that already exists in the corresponding set, it means the Sudoku board is invalid.  | [Solution](./Matrix/01.valid-sudoku.md) |
+| [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/description/) | The problem is to traverse a matrix in a spiral order, starting from the top-left corner, moving clockwise, and adding each element visited to a result list. The intuition is to use four pointers (`left`, `right`, `top`, `bottom`) to keep track of the boundaries of the matrix and traverse the elements in a spiral manner. | [Solution](./Matrix/02.spiral-matrix.md)|
+| [Rotate Image](https://leetcode.com/problems/rotate-image/description/) |  The problem is to rotate a square matrix by 90 degrees clockwise in-place. The intuition is to perform the rotation in layers, starting from the outermost layer and moving inwards. In each layer, we swap the elements of the top, right, bottom, and left sides of the layer in a cyclic manner. | [Solution](./Matrix/03.rotate-image.md) |
+| [Set Matrix Zeros](https://leetcode.com/problems/set-matrix-zeroes/description/) | The problem is to set entire rows and columns to zero in a matrix if any element in that row or column is zero. The intuition is to use the first row and first column of the matrix to mark which rows and columns need to be set to zero. We can use two additional variables to indicate if the first row and first column themselves need to be set to zero. | [Solution](./Matrix/04.set-matrix-zeros.md) |
+| [Game Of Life](https://leetcode.com/problems/game-of-life/?envType=study-plan-v2&envId=top-interview-150) |   | [Solution](./Matrix/05.game-of-life.md) |
+
+
+# HashMap
+| Problem | Notes | Solution |
+|:-------------|:--------------:|-------------:|
+| [Ransom Note](https://leetcode.com/problems/ransom-note/?envType=study-plan-v2&envId=top-interview-150) | To determine if a ransom note can be constructed from the letters available in a magazine, we need to check if every character in the ransom note can be found in the magazine with sufficient frequency. The first thought is to use a hash map to count the occurrences of each character in the magazine and then verify if the ransom note can be formed using these counts.  | [Solution](./HashMap/01.randsom-note.md)|
+| [Isomorphic String](https://leetcode.com/problems/isomorphic-strings/?envType=study-plan-v2&envId=top-interview-150) | To determine if two strings `s` and `t` are isomorphic, we need to ensure that each character in `s` can be mapped to a unique character in `t` and vice versa. This mapping must be consistent throughout the strings. Initially, my thought is to use two arrays to track the most recent index of characters in both strings to ensure their mappings align properly. | [Solution](./HashMap/02.isomorphic-strings.md)|
+| [Word Pattern](https://leetcode.com/problems/word-pattern/description/?envType=study-plan-v2&envId=top-interview-150) |  The problem is to determine if a pattern matches the words in a string such that each character in the pattern corresponds to a unique word in the string and vice versa. My initial thought is to use a hash map to maintain the mapping between the characters in the pattern and the words in the string. | [Solution](./HashMap/03.word-pattern.md)|
+| [Valid Anagram](https://leetcode.com/problems/valid-anagram/description/) |  To determine if two strings are anagrams, we need to check if they contain the same characters with the same frequency. One approach is to count the frequency of each character in both strings and compare them. If the frequency counts match, the strings are anagrams. | [Solution](./HashMap/04.valid-anagram.md)|
+| [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | To group anagrams together, we can use a hashmap where the key is a sorted version of each word, and the value is a list of words that are anagrams of each other. By sorting each word, anagrams will have the same sorted representation and will be grouped together in the hashmap. | [Solution](./HashMap/05.group-anagram.md)|
+| [Two Sum](https://leetcode.com/problems/two-sum/) | To solve the Two Sum problem, we can use a hashmap to store the elements of the array along with their indices. By doing so, we can quickly check if the complement (target - current element) exists in the hashmap. If it does, we have found the required pair of numbers. | [Solution](./HashMap/06.two-sum.md)|
+| [Happy Number](https://leetcode.com/problems/happy-number/description/) | The given code solves the problem of determining whether a number is a happy number or not. A happy number is a number that eventually reaches 1 when replaced by the sum of the squares of its digits repeatedly. The code uses the Floyd's Cycle-Finding Algorithm (also known as the "tortoise and hare" algorithm) to detect cycles in the sequence of numbers generated by the digit square sum process.  | [Solution](./HashMap/07.happy-number.md)|
+| [Contains Duplicate 2](https://leetcode.com/problems/contains-duplicate-ii/description/?envType=study-plan-v2&envId=top-interview-150) | The problem is to check if there are any duplicate numbers in the array such that the indices of the duplicate numbers are at most `k` positions apart. My first thought is to use a hash map to store the indices of the numbers and check the difference in indices whenever a duplicate is found.  | [Solution](./HashMap/08.contains-duplicate-2.md)|
+| [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/description/) |  The problem asks us to find the length of the longest consecutive sequence in an unsorted array of integers. The intuitive approach is to use a hash set to store all the numbers in the array and then iterate through the set to find the longest consecutive sequence. By using a hash set, we can achieve O(1) lookup time for each number. | [Solution](./HashMap/09.longest-consecutive-subsequence.md)|
+
+# Intervals
+| Problem | Notes | Solution |
+|:-------------|:--------------:|-------------:|
+| [Summary Ranges](https://leetcode.com/problems/summary-ranges/submissions/1318385400/?envType=study-plan-v2&envId=top-interview-150) | The problem is to summarize a sorted array into ranges. My first thought is to iterate through the array and group consecutive numbers together. If a group of consecutive numbers is found, it should be represented as a range. If a number is not part of any group, it should be represented as a single number.  | [Solution](./Intervals/01.summary-ranges.md) |
+| [Merge Intervals](https://leetcode.com/problems/merge-intervals/) |  To merge overlapping intervals, we can sort the intervals based on their start times and then iterate through the sorted intervals. If the current interval's start time is less than or equal to the end time of the previous interval, we merge them by updating the end time of the previous interval to the maximum of the two end times. Otherwise, we add the previous interval to the result list and update the previous interval to the current interval. | [Solution](./Intervals/02.merge-intervals.md) |
+| [Insert Interval](https://leetcode.com/problems/insert-interval/) | To insert a new interval into a list of non-overlapping intervals, we can iterate through the existing intervals and merge the new interval with any overlapping intervals. The intuition is to find the appropriate position to insert the new interval and merge it with any overlapping intervals. | [Solution](./Intervals/03.insert-intervals.md) |
+| [Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/?envType=study-plan-v2&envId=top-interview-150) | The problem involves finding the minimum number of arrows needed to burst all the balloons, where each balloon is represented by an interval. The main idea is to minimize the number of arrows by exploiting overlaps between intervals. If intervals overlap, they can be burst by a single arrow. | [Solution](./Intervals/04.minimum-number-of-arrows-to-burst-ballons.md) |
+
+
+# Stack
+| Problem | Notes | Solution |
+|:-------------|:--------------:|-------------:|
+| [Valid Parenthesis](https://leetcode.com/problems/valid-parentheses/description/)  | The intuition is to use a stack data structure to keep track of the opening parentheses encountered in the string. When we come across a closing parenthesis, we check if it matches the last opening parenthesis in the stack. If it doesn't match, or if the stack is empty (meaning there are more closing parentheses than opening ones), then the string is invalid. | [Solution](./Stack/01.valid-parenthesis.md)|
+| [Simplify Path](https://leetcode.com/problems/simplify-path/?envType=study-plan-v2&envId=top-interview-150)  | To simplify a given file path, we need to handle various special cases such as current directory (`.`), parent directory (`..`), and empty components caused by consecutive slashes. The goal is to convert the path into its canonical form.| [Solution](./Stack/02.simplify-path.md)|
+| [Min Stack](https://leetcode.com/problems/min-stack/) |  The problem is to design a data structure that supports push, pop, top, and getMin operations in constant time. The intuition is to use a stack to store the elements and maintain a variable `min` to keep track of the minimum element at any given time. However, we need a way to remember the previous minimum value when a new minimum value is pushed onto the stack. | [Solution](./Stack/03.min-stack.md)|
+| [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/description/) |  The problem is to evaluate a Reverse Polish Notation (RPN) expression. RPN is a notation where operators follow their operands. The intuition is to use a stack to evaluate the expression by pushing operands onto the stack and performing operations when an operator is encountered, using the operands from the top of the stack. | [Solution](./Stack/04.evaluate-reverse-polish-notation.md)|
+| [Basic Calculator](https://leetcode.com/problems/basic-calculator/description/)  | When solving the problem of evaluating a simple mathematical expression containing integers, +, -, (, and ), it is essential to handle nested operations correctly. The key is to use a stack to manage the current result and sign whenever encountering a parenthesis.  | [Solution](./Stack/05.basic-calculator.md)|
+
+
+
+# Linked List
+| Problem | Notes | Solution |
+|:-------------|:--------------:|-------------:|
+|  [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/) |  The problem is to determine if a given linked list contains a cycle. The intuition is to use the Floyd's cycle-finding algorithm, also known as the "tortoise and hare" algorithm. The idea is to use two pointers, one moving twice as fast as the other. If there is a cycle, the two pointers will eventually meet. If there is no cycle, the faster pointer will reach the end of the list first. | [Solution](./Linked-List/01.linked-list-cycle.md)|
+| [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/)  | The problem is to add two non-negative numbers represented as linked lists, where each node contains a single digit, and the digits are stored in reverse order. The intuition is to perform digit-wise addition, similar to how we add numbers on paper, and propagate the carry to the next digit.  | [Solution](./Linked-List/02.add-two-numbers.md) |
+| [Merge Two Sorted List](https://leetcode.com/problems/merge-two-sorted-lists/description/)  | The problem is to merge two sorted linked lists into a new sorted linked list. The intuition is to compare the values of the nodes in the two input lists and add the smaller value node to the new list, while moving the pointer in the corresponding input list forward.| [Solution](./Linked-List/03.merge-two-sorted-lists.md) |
+| [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/) |  The problem is to create a deep copy of a linked list where each node has a `random` pointer that can point to any node in the list, including itself. The intuition is to use a dictionary (HashMap) to map the original nodes to their corresponding copied nodes. We can then iterate through the original list, create copies of the nodes, and update the `next` and `random` pointers of the copied nodes based on the original nodes and the dictionary. | [Solution](./Linked-List/04.copy-list-with-random-pointers.md) |
+| [Reverse Linked List 2](https://leetcode.com/problems/reverse-linked-list-ii) | The problem requires reversing a portion of a linked list between two given positions, `left` and `right`. The main idea is to traverse the list until the `left` position, reverse the sublist from `left` to `right`, and then reconnect the reversed sublist back to the main list. | [Solution](./Linked-List/05.reverse-linked-list-2.md) |
+| [Reverse Nodes in K groups](https://leetcode.com/problems/reverse-nodes-in-k-group/description/) | The problem is to reverse nodes in a linked list in groups of size `k`. The intuition is to use a recursive approach to reverse the first `k` nodes of the linked list, and then move to the next group of `k` nodes and repeat the process. We can keep track of the next group's starting node by maintaining a reference to the node right after the current group. | [Solution](./Linked-List/06.reverse-nodes-in-k-groups.md) |
+| [Remove Nth Node from the End](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/) | The problem is to remove the nth node from the end of a linked list. The intuition is to use two pointers, `first` and `second`, where `second` is initially ahead of `first` by `n` nodes. Then, move both pointers at the same pace until `second` reaches the end of the list. At this point, `first` will be pointing to the (n+1)th node from the end, and we can remove the next node (the nth node from the end). | [Solution](./Linked-List/07.remove-nth-node-from-the-list.md) |
+| [Remove duplicates from sorted list 2](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii) |  To solve the problem of removing duplicates from a sorted linked list, the first thought is to traverse the list and compare each node with its next node. If duplicates are found, skip all nodes that have the same value to ensure only distinct numbers remain. | [Solution](./Linked-List/08.remove-duplicates-from-sorted-list-2.md) |
+| [Rotate List](https://leetcode.com/problems/rotate-list) | To solve the problem of rotating a linked list to the right by `k` places, the first thought is to recognize that rotating the list effectively means reconnecting the end of the list to the beginning and breaking the connection at the appropriate position. This can be visualized by turning the list into a circular linked list and then breaking it at the new tail position. | [Solution](./Linked-List/09.rotate-list.md) |
+| [Partition List](https://leetcode.com/problems/partition-list) |  To partition a linked list around a value \(x\) such that all nodes less than \(x\) come before nodes greater than or equal to \(x\), the first thought is to use two separate lists: one for elements smaller than \(x\) and one for elements greater than or equal to \(x\). These lists can then be concatenated to produce the desired result. | [Solution](./Linked-List/10.partition-list.md) |
+| [LRU Cache](https://leetcode.com/problems/lru-cache/)  |  | [Solution](./Linked-List/11.lru-cache.md) |
+
+# Binary Tree General
+| Problem | Notes | Solution |
+|:-------------|:--------------:|-------------:|
+| [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | To find the maximum depth of a binary tree, we can use a recursive approach. The intuition is that the maximum depth of a tree is the maximum depth of its left subtree or its right subtree, plus one (to account for the root node). We can recursively traverse the tree, calculate the maximum depth of the left and right subtrees, and return the maximum of the two depths plus one. | [Solution](./Binary-Tree-General/01.maximum-depth-of-binary-tree.md)|
+| [Same Tree](https://leetcode.com/problems/same-tree/description/) | To determine if two binary trees are the same, we can compare their structure and node values. One approach is to perform an inorder traversal of both trees and store the node values in separate lists. If the resulting lists are equal, the trees are the same. However, this approach has some limitations, as it only compares the node values and not the actual structure of the trees. | [Solution](./Binary-Tree-General/02.same-tree.md) |
+| [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/description/) | The problem of inverting a binary tree can be solved by swapping the left and right child of each node. The intuition is to perform a level-order traversal of the tree using a queue and swap the left and right child of each node as we visit it. This approach ensures that all nodes in the tree are processed and their left and right children are swapped. | [Solution](./Binary-Tree-General/03.invert-tree.md) |
+| [Symmetric Tree](https://leetcode.com/problems/symmetric-tree) | The problem is to determine if a binary tree is symmetric around its center. A symmetric tree is a mirror image of itself. The first thought is to compare the left and right subtrees of the root to check if they are mirror images of each other. | [Solution](./Binary-Tree-General/04.symmetric-tree.md) |
+| [Construct Binary Tree from Inorder and Preorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/) | To construct the binary tree from its preorder and inorder traversals, we can utilize the properties of these traversals. In the preorder traversal, the first element represents the root node, followed by the elements of the left subtree and then the elements of the right subtree. In the inorder traversal, the elements are in the order of left subtree, root, and right subtree. By combining the information from both traversals, we can uniquely determine the structure of the binary tree. | [Solution](./Binary-Tree-General/05.construct-binary-tree-from-preorder-and-inorder.md) |
+| [Construct Binary Tree From Inorder and Postorder](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/description/?envType=study-plan-v2&envId=top-interview-150) | The key insight is that the last element in the postorder traversal is always the root of the tree or subtree. Additionally, the inorder traversal gives us the left and right subtrees of each node. By combining these properties, we can recursively construct the binary tree. | [Solution](./Binary-Tree-General/06.construct-binary-tree-from-inorder-and-postorder.md) |
+| [Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii)  | The problem requires connecting nodes at the same level in a binary tree. A level-order traversal (breadth-first search) seems natural for this, as it processes nodes level by level. Using a queue allows us to keep track of nodes at each level and connect them accordingly. | [Solution](./Binary-Tree-General/07.populating-next-right-pointers-in-each-node-2.md) |
+| [Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list) | The problem requires flattening a binary tree into a "right-skewed" tree. A pre-order traversal (root, left, right) naturally gives the order we want in the flattened tree. The key is to maintain the original right subtree while attaching the flattened left subtree to the right of the root. | [Solution](./Binary-Tree-General/08.flatten-binary-tree-to-linked-list.md)|
+| [Path Sum](https://leetcode.com/problems/path-sum) | The problem asks to find if there's a root-to-leaf path that sums to a target value. This suggests a depth-first traversal of the tree, keeping track of the sum along each path. The key is to recognize that we're looking for a path that ends at a leaf node. | [Solution](./Binary-Tree-General/09.path-sum.md) |
+| [Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers) | The problem requires summing up all root-to-leaf numbers in a binary tree. Each path from root to leaf represents a number, where each node contributes a digit. A depth-first search (DFS) approach can be used to traverse all paths from root to leaf, building the numbers along the way. | [Solution](./Binary-Tree-General/10.sum-root-to-leaf-numbers.md) |
+| [Maximum Path Sum in a Binary Tree](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | To find the maximum path sum in a binary tree, we need to consider all possible paths and keep track of the maximum sum encountered. A path can start and end at any node, and it can either pass through the root or not. We can solve this problem using a recursive approach, where we calculate the maximum path sum for each node and update the overall maximum sum accordingly. | [Solution](./Binary-Tree-General/11.binary-tree-maximum-path-sum.md) |
+| [Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator) | The problem requires implementing an iterator for a Binary Search Tree (BST). The key insight is that an inorder traversal of a BST yields nodes in ascending order. By performing an inorder traversal and storing the results, we can easily implement the iterator functionality. | [Solution](./Binary-Tree-General/12.binary-search-tree-iterator.md) |
+| [Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes) | The problem asks to count the number of nodes in a binary tree. The most straightforward approach is to traverse the entire tree and count each node. A recursive depth-first search (DFS) can efficiently accomplish this task. | [Solution](./Binary-Tree-General/13.count-complete-tree-nodes.md) |
+| [Lowest Common Ancestor of Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree) | The lowest common ancestor (LCA) of two nodes in a binary tree is the deepest node that is an ancestor to both nodes. We can solve this problem using a bottom-up approach, where we traverse the tree and look for the nodes p and q. The key insight is that the LCA is the first node we encounter that has p and q in different subtrees (or is one of p or q itself). | [Solution](./Binary-Tree-General/14.lowest-common-ancestor-of-a-binary-tree.md) |
+
+
+# Binary Tree General
+| Problem | Notes | Solution |
+|:-------------|:--------------:|-------------:|
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+
+# Binary Tree General
+| Problem | Notes | Solution |
+|:-------------|:--------------:|-------------:|
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+
+# Binary Tree General
+| Problem | Notes | Solution |
+|:-------------|:--------------:|-------------:|
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+
+# Binary Tree General
+| Problem | Notes | Solution |
+|:-------------|:--------------:|-------------:|
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+
+# Binary Tree General
+| Problem | Notes | Solution |
+|:-------------|:--------------:|-------------:|
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+
+# Binary Tree General
+| Problem | Notes | Solution |
+|:-------------|:--------------:|-------------:|
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
