@@ -143,27 +143,16 @@
 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree) |  To determine if a binary tree is a valid binary search tree (BST), we need to ensure that for each node, its value is greater than all the values in its left subtree and less than all the values in its right subtree. We can solve this problem using a recursive approach, where we keep track of the valid range for each node based on its ancestors. The valid range for a node is determined by the minimum and maximum values allowed for it to satisfy the BST property. | [Solution](./Binary-Search-Tree/01.minimum-absolute-difference-in-bst.md) |
 
 
-# Binary Tree General
+# Graph General
 | Problem | Notes | Solution |
 |:-------------|:--------------:|-------------:|
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
+| [Number of Islands](https://leetcode.com/problems/number-of-islands/) | The problem can be solved using a depth-first search (DFS) approach. We can traverse the grid and whenever we encounter a '1', we can perform DFS to explore the connected land cells and mark them as visited by changing them to '0'. Each DFS call will represent one island.
+ | [Solution](./Graph-General/01.number-of-islands.md) |
+| [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/) | The problem can be solved using depth-first search (DFS) on the border cells of the board. The idea is to identify the 'O' cells that are connected to the border cells and mark them as a special character ('*') to indicate that they should not be flipped to 'X'. After the DFS traversal, we iterate through the board and flip the remaining 'O' cells to 'X' and the '*' cells back to 'O'. | [Solution](./Graph-General/02.surrounded-regions.md) |
+| [Clone Graph](https://leetcode.com/problems/clone-graph/description/) | To clone a graph, we can use a depth-first search (DFS) approach along with a hash map to keep track of visited nodes. The hash map will store the mapping between the original node and its cloned counterpart. We can recursively clone each node and its neighbors while avoiding duplicate cloning by checking the hash map. | [Solution](./Graph-General/03.clone-graph.md) |
+| [Evaluate Division](https://leetcode.com/problems/evaluate-division) | The problem can be thought of as evaluating division operations over a graph where nodes represent variables and edges represent division results. By constructing a graph from the given equations and their corresponding values, we can use depth-first search (DFS) to find a path from the dividend to the divisor in each query, thereby computing the result. | [Solution](./Graph-General/04.evaluate-division.md) |
+| [Course Schedule](https://leetcode.com/problems/course-schedule/) | To determine if it is possible to finish all courses, we need to check if there are any cycles in the dependency graph. If there are no cycles, it means that all courses can be completed. We can use depth-first search (DFS) to detect cycles in the graph. | [Solution](./Graph-General/05.course-schedule.md) |
+| [Course Schedule 2](https://leetcode.com/problems/course-schedule-ii/) | To find a valid course schedule, we can use topological sorting. If there is a cycle in the dependency graph, it means that there is no valid course schedule. We can perform a depth-first search (DFS) on the graph and check for cycles. If no cycles are detected, we can generate a valid course schedule by adding the courses to a stack in the order of completion. | [Solution](./Graph-General/06.course-schedule-2.md) |
 
 # Binary Tree General
 | Problem | Notes | Solution |
