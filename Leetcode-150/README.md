@@ -161,6 +161,14 @@
 | [Minimum Genetic Mutation](https://leetcode.com/problems/minimum-genetic-mutation) | To transform the start gene to the end gene with the minimum number of mutations, we can think of each gene as a node and each valid mutation as an edge in an unweighted graph. The problem can be solved using Breadth-First Search (BFS) to find the shortest path from the start gene to the end gene, as BFS is well-suited for finding the shortest path in an unweighted graph. | [Solution](./Graph-BFS/02.minimum-genetic-mutation.md)|
 | [Word Ladder](https://leetcode.com/problems/word-ladder) | To find the shortest transformation sequence from `beginWord` to `endWord`, we can use a breadth-first search (BFS) approach. We can treat each word as a node in a graph, and an edge exists between two words if they differ by exactly one letter. By performing BFS starting from `beginWord`, we can find the shortest path to reach `endWord`. | [Solution](./Graph-BFS/03.word-ladder.md) |
 
+# Trie
+| Problem | Notes | Solution |
+|:-------------|:--------------:|-------------:|
+| [Implement Trie Prefix Tree](https://leetcode.com/problems/implement-trie-prefix-tree/description/) | The Trie data structure, also known as a prefix tree, is an efficient way to store and retrieve strings. It allows for fast insertion, search, and prefix matching operations. The intuition behind using a Trie is to represent each character of a string as a node in the tree, with each node potentially having multiple child nodes representing the next characters in the string. By traversing the tree, we can efficiently perform operations like insertion, search, and prefix matching. | [Solution](./Trie/01.implement-trie.md)|
+| [Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure/description/) | The problem of designing a data structure for adding words and searching for words with wildcards can be solved using a Trie (prefix tree) data structure. The intuition is to store the words in a Trie, where each node represents a character and the end of a word is marked with a special flag. To handle wildcards ('.') during the search, we need to modify the search function to explore all possible paths in the Trie when encountering a wildcard. | [Solution](./Trie/02.design-add-and-search-words-data-structure.md)|
+| [Word Search 2](https://leetcode.com/problems/word-search-ii/description/) | The problem of finding all words in a board that can be formed by a list of given words can be solved using a combination of a Trie data structure and depth-first search (DFS). The intuition is to build a Trie with the given words and then perform DFS on the board to explore all possible paths and check if any word from the Trie can be formed along the path.
+ | [Solution](./Trie/03.word-search-2.md)|
+
 # Binary Tree General
 | Problem | Notes | Solution |
 |:-------------|:--------------:|-------------:|
@@ -182,6 +190,76 @@
 |   |   | |
 |   |   | |
 |   |   | |
+
+
+# Binary Tree General
+| Problem | Notes | Solution |
+|:-------------|:--------------:|-------------:|
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+
+
+# Binary Tree General
+| Problem | Notes | Solution |
+|:-------------|:--------------:|-------------:|
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+
+
+# Binary Tree General
+| Problem | Notes | Solution |
+|:-------------|:--------------:|-------------:|
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+
 
 # Binary Tree General
 | Problem | Notes | Solution |
