@@ -169,27 +169,16 @@
 | [Word Search 2](https://leetcode.com/problems/word-search-ii/description/) | The problem of finding all words in a board that can be formed by a list of given words can be solved using a combination of a Trie data structure and depth-first search (DFS). The intuition is to build a Trie with the given words and then perform DFS on the board to explore all possible paths and check if any word from the Trie can be formed along the path.
  | [Solution](./Trie/03.word-search-2.md)|
 
-# Binary Tree General
+# Backtracking
 | Problem | Notes | Solution |
 |:-------------|:--------------:|-------------:|
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
+| [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/) |   | [Solution](./Backtracking/01.letter-combinations-of-phone-number.md)|
+| [Combinations](https://leetcode.com/problems/combinations) | To generate all possible combinations of `k` numbers out of the range from `1` to `n`, we can use a backtracking approach. Backtracking is effective for this type of problem because it allows us to explore all potential combinations by incrementally building candidates and abandoning those that fail to meet the criteria. | [Solution](./Backtracking/02.combinations.md) |
+| [Permutations](https://leetcode.com/problems/permutations) | The problem of generating all permutations of a given array can be solved using a backtracking approach. The intuition is to build permutations by making choices at each step, and backtrack when a complete permutation is formed or when an element has already been used. | [Solution](./Backtracking/03.permutations.md) |
+| [Combination Sum](https://leetcode.com/problems/combination-sum/) | The problem of finding all unique combinations that sum up to a target can be solved using a backtracking approach. The intuition is to generate combinations by making choices at each step, and backtrack when the sum exceeds the target or when a valid combination is found. | [Solution](./Backtracking/04.combination-sum.md) |
+| [N Queens 2](https://leetcode.com/problems/n-queens-ii) | The N-Queens problem is a classic backtracking problem. The key insight is that we can place queens row by row, ensuring that each new queen doesn't conflict with the previously placed queens. We need to keep track of occupied columns and diagonals to quickly check for conflicts. | [Solution](./Backtracking/05.n-queens-2.md) |
+| [Generate Parenthesis](https://leetcode.com/problems/generate-parentheses/description/) | The problem is to generate all possible combinations of well-formed parentheses, given a number `n` that represents the number of pairs of parentheses. The intuition is to use a recursive backtracking approach to generate the combinations.The key idea is to ensure that at any point in the recursion, the number of closing parentheses does not exceed the number of opening parentheses. This property ensures that the generated combinations are well-formed. | [Solution](./Backtracking/06.generate-parenthesis.md)|
+| [Word Search](https://leetcode.com/problems/word-search/description/) | The problem of determining if a word exists in a grid of characters can be solved using a backtracking approach. The intuition is to explore all possible paths in the grid by starting from each cell and recursively checking the neighboring cells to find a match for the given word. We can use a visited array to keep track of the cells that have been visited to avoid visiting the same cell multiple times. | [Solution](./Backtracking/07.word-search.md)|
 
 
 # Binary Tree General
