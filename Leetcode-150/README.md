@@ -190,27 +190,11 @@
 | [Merge K sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/description/) | Instead of repeatedly merging pairs of linked lists, we can use a min-heap to efficiently find the node with the smallest value among all the linked lists and add it to the merged list. This way, we can merge all the linked lists in a single pass. | [Solution](./Divide-And-Conquer/04.merge-k-sorted-lists.md)|
 
 
-# Binary Tree General
+# Kadanes Algorithm
 | Problem | Notes | Solution |
 |:-------------|:--------------:|-------------:|
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
+| [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | The problem of finding the contiguous subarray with the largest sum can be solved using Kadane's algorithm. The intuition behind Kadane's algorithm is to maintain a variable that stores the maximum sum ending at the current position and another variable that keeps track of the overall maximum sum encountered so far. At each step, we decide whether to start a new subarray or continue the existing subarray based on whether including the current element increases the sum or not. | [Solution](./Kadanes-Algorithm/01.maximum-subarray.md)|
+| [Maximum Sum Circular Subarray](https://leetcode.com/problems/maximum-sum-circular-subarray) | The problem of finding the maximum sum of a subarray in a circular array suggests using Kadane's algorithm to find the maximum subarray sum in the linear case. For the circular case, we should consider the total sum of the array minus the minimum subarray sum, as this would effectively "wrap around" the array. | [Solution](./Kadanes-Algorithm/02.maximum-sum-circular-subarray.md)|
 
 
 # Binary Tree General
