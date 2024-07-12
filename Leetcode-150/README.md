@@ -197,6 +197,18 @@
 | [Maximum Sum Circular Subarray](https://leetcode.com/problems/maximum-sum-circular-subarray) | The problem of finding the maximum sum of a subarray in a circular array suggests using Kadane's algorithm to find the maximum subarray sum in the linear case. For the circular case, we should consider the total sum of the array minus the minimum subarray sum, as this would effectively "wrap around" the array. | [Solution](./Kadanes-Algorithm/02.maximum-sum-circular-subarray.md)|
 
 
+# Binary Search
+| Problem | Notes | Solution |
+|:-------------|:--------------:|-------------:|
+| [Search Insert Position](https://leetcode.com/problems/search-insert-position) | The problem involves finding the position to insert a target value in a sorted array, ensuring the array remains sorted. The immediate thought is to use binary search due to its efficiency in searching sorted arrays. | [Solution](./Binary-Search/01.search-insert-position.md)|
+| [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/) | The problem asks to search for a target value in a 2D matrix sorted in both rows and columns. The intuition is to treat the 2D matrix as a single sorted array and perform binary search on it. By flattening the matrix into a 1D array, we can leverage the existing binary search algorithm for sorted arrays. | [Solution](./Binary-Search/02.search-a-2d-matrix.md)|
+| [Find the Peak Element](https://leetcode.com/problems/find-peak-element) | The problem is about finding any peak element in an array, where a peak element is defined as an element that is greater than its neighbors (if they exist). Given the sorted nature of the array, an efficient approach is to use binary search to minimize the number of comparisons. | [Solution](./Binary-Search/03.find-peak-element.md)|
+| [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/) | The given code implements a binary search algorithm to find the index of a target element in a rotated sorted array. The key intuition is to identify which half of the array is sorted and determine if the target element lies within that sorted half. By comparing the middle element with the target and the endpoints of the current search range, we can recursively narrow down the search space until the target is found or the search range is exhausted. | [Solution](./Binary-Search/04.search-in-rotated-sorted-array.md)|
+| [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array) | The problem requires finding the first and last positions of a target element in a sorted array. Given that the array is sorted, binary search can be leveraged to efficiently locate these positions. | [Solution](./Binary-Search/05.find-first-and-last-position-of-element-in-sorted-array.md)|
+| [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/) | The problem can be solved using a modified binary search approach. Since the array is sorted in ascending order, the key idea is to find the pivot point where the value transitions from a larger value to a smaller value. This pivot point is the minimum value in the rotated sorted array. | [Solution](./Binary-Search/06.find-minimum-in-rotated-sorted-array.md)|
+| [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/) | To find the median of two sorted arrays with a time complexity of O(log(m+n)), we can use the idea of binary search. Instead of merging the arrays and finding the median, we can perform a binary search on the smaller array to find the partition point that divides both arrays into left and right halves such that the elements in the left half are smaller than or equal to the elements in the right half. Once we find the correct partition, we can determine the median based on the maximum element in the left half and the minimum element in the right half. | [Solution](./Binary-Search/07.median-of-two-sorted-arrays.md) |
+
+
 # Binary Tree General
 | Problem | Notes | Solution |
 |:-------------|:--------------:|-------------:|
@@ -219,6 +231,94 @@
 |   |   | |
 |   |   | |
 
+
+# Binary Tree General
+| Problem | Notes | Solution |
+|:-------------|:--------------:|-------------:|
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+
+# Binary Tree General
+| Problem | Notes | Solution |
+|:-------------|:--------------:|-------------:|
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+
+# Binary Tree General
+| Problem | Notes | Solution |
+|:-------------|:--------------:|-------------:|
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+
+# Binary Tree General
+| Problem | Notes | Solution |
+|:-------------|:--------------:|-------------:|
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
+|   |   | |
 
 # Binary Tree General
 | Problem | Notes | Solution |
