@@ -125,27 +125,15 @@
 | [Lowest Common Ancestor of Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree) | The lowest common ancestor (LCA) of two nodes in a binary tree is the deepest node that is an ancestor to both nodes. We can solve this problem using a bottom-up approach, where we traverse the tree and look for the nodes p and q. The key insight is that the LCA is the first node we encounter that has p and q in different subtrees (or is one of p or q itself). | [Solution](./Binary-Tree-General/14.lowest-common-ancestor-of-a-binary-tree.md) |
 
 
-# Binary Tree General
+# Binary Tree BFS
 | Problem | Notes | Solution |
 |:-------------|:--------------:|-------------:|
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
+| [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view) | To find the right side view of a binary tree, we can perform a level order traversal (breadth-first search) and keep track of the rightmost node at each level. The rightmost node at each level will be the one visible from the right side. We can use a queue to perform the level order traversal and add the last node at each level to the result list. | [Solution](./Binary-Tree-BFS/01.binary-tree-right-size-view.md)|
+| [Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree) | The problem requires calculating the average value of nodes at each level in a binary tree. This naturally suggests a level-order traversal (breadth-first search) approach, where we process the tree level by level and compute the average for each level.
+ | [Solution](./Binary-Tree-BFS/02.average-of-levels-in-binary-tree.md)|
+| [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description/) | To perform level order traversal of a binary tree, we can use a breadth-first search (BFS) approach using a queue. The idea is to process the nodes level by level, starting from the root. At each level, we enqueue the nodes from left to right and process them in the order they were enqueued. This ensures that we visit the nodes in level order. | [Solution](./Binary-Tree-BFS/03.binary-tree-level-order-traversal.md)|
+| [Binary Tree Zigzag Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal) | The problem requires a level-order traversal of a binary tree, but with alternating directions (zigzag). This suggests using a breadth-first search (BFS) approach with a modification to reverse the order of nodes at alternating levels. | [Solution](./Binary-Tree-BFS/04.binary-tree-zigzag-traversal.md)|
+
 
 # Binary Tree General
 | Problem | Notes | Solution |
