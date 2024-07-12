@@ -135,27 +135,13 @@
 | [Binary Tree Zigzag Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal) | The problem requires a level-order traversal of a binary tree, but with alternating directions (zigzag). This suggests using a breadth-first search (BFS) approach with a modification to reverse the order of nodes at alternating levels. | [Solution](./Binary-Tree-BFS/04.binary-tree-zigzag-traversal.md)|
 
 
-# Binary Tree General
+# Binary Search Tree
 | Problem | Notes | Solution |
 |:-------------|:--------------:|-------------:|
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
+| [Minimum Absolute Difference in BST](https://leetcode.com/problems/minimum-absolute-difference-in-bst) | The problem asks for the minimum absolute difference between any two nodes in a Binary Search Tree (BST). In a BST, an inorder traversal visits nodes in ascending order. By performing an inorder traversal and comparing each node with its predecessor, we can find the minimum difference efficiently. | [Solution](./Binary-Search-Tree/01.minimum-absolute-difference-in-bst.md)|
+| [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst) | To find the kth smallest element in a binary search tree (BST), the in-order traversal is the key. The in-order traversal of a BST yields the nodes in ascending order. Thus, by performing an in-order traversal, we can gather the elements in a sorted manner and then simply access the k-1 index to get the kth smallest element. | [Solution](./Binary-Search-Tree/01.minimum-absolute-difference-in-bst.md) |
+| [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree) |  To determine if a binary tree is a valid binary search tree (BST), we need to ensure that for each node, its value is greater than all the values in its left subtree and less than all the values in its right subtree. We can solve this problem using a recursive approach, where we keep track of the valid range for each node based on its ancestors. The valid range for a node is determined by the minimum and maximum values allowed for it to satisfy the BST property. | [Solution](./Binary-Search-Tree/01.minimum-absolute-difference-in-bst.md) |
+
 
 # Binary Tree General
 | Problem | Notes | Solution |
