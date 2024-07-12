@@ -209,27 +209,13 @@
 | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/) | To find the median of two sorted arrays with a time complexity of O(log(m+n)), we can use the idea of binary search. Instead of merging the arrays and finding the median, we can perform a binary search on the smaller array to find the partition point that divides both arrays into left and right halves such that the elements in the left half are smaller than or equal to the elements in the right half. Once we find the correct partition, we can determine the median based on the maximum element in the left half and the minimum element in the right half. | [Solution](./Binary-Search/07.median-of-two-sorted-arrays.md) |
 
 
-# Binary Tree General
+# Heap
 | Problem | Notes | Solution |
 |:-------------|:--------------:|-------------:|
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
+| [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) | To find the kth largest element in an array, we can use a min-heap data structure. We can maintain a min-heap of size k, where the heap stores the k largest elements encountered so far. Whenever we encounter a new element, if it is larger than the smallest element in the min-heap (i.e., the root), we remove the root and insert the new element into the min-heap. This way, the root of the min-heap will always be the kth largest element. | [Solution](./Heap/01.kth-largest-element-in-a-array.md)|
+| [IPO](https://leetcode.com/problems/ipo) | The problem requires selecting projects to maximize capital while respecting constraints on the number of projects and available initial capital. Using a greedy approach where we always select the most profitable project we can afford seems suitable, especially when coupled with efficient data structures like a max heap to quickly retrieve the highest profit project. | [Solution](./Heap/02.ipo.md)|
+| [Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums) | The problem involves finding the k smallest pairs from two sorted arrays, nums1 and nums2. Using a priority queue (min-heap) is intuitive because it allows us to always extract the smallest current pair efficiently. This ensures that we can explore potentially promising pairs without having to evaluate all possible pairs upfront. | [Solution](./Heap/03.find-k-pairs-with-smallest-sums.md)|
+| [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/description/) | To find the median from a data stream, we can use a two-heap approach. By maintaining a max-heap for the lower half of the numbers and a min-heap for the upper half of the numbers, we can efficiently access the middle element(s) to calculate the median. The key intuition is to balance the heaps so that the size difference between them is at most 1, and the top element of the max-heap is smaller than or equal to the top element of the min-heap. | [Solution](./Heap/04.find-median-from-data-stream.md)|
 
 
 # Binary Tree General
