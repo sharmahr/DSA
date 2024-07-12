@@ -218,27 +218,15 @@
 | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/description/) | To find the median from a data stream, we can use a two-heap approach. By maintaining a max-heap for the lower half of the numbers and a min-heap for the upper half of the numbers, we can efficiently access the middle element(s) to calculate the median. The key intuition is to balance the heaps so that the size difference between them is at most 1, and the top element of the max-heap is smaller than or equal to the top element of the min-heap. | [Solution](./Heap/04.find-median-from-data-stream.md)|
 
 
-# Binary Tree General
+# Bit Manipulation
 | Problem | Notes | Solution |
 |:-------------|:--------------:|-------------:|
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
+| [Add Binary](https://leetcode.com/problems/add-binary) | The problem requires adding two binary strings and returning the result as a binary string. The addition should handle carries just like in regular binary addition, where each position can either be 0 or 1, with a carry potentially propagating to the next higher bit. | [Solution](./Bit-Manipulation/01.add-binary.md)|
+| [Reverse Bits](https://leetcode.com/problems/reverse-bits/) | To reverse the bits of a given 32-bit unsigned integer, we can iterate over each bit from the least significant bit to the most significant bit. In each iteration, we extract the last bit of the input number, add it to the result, and then shift the input number to the right by 1 to process the next bit. | [Solution](./Bit-Manipulation/02.reverse-bits.md)|
+| [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | The problem is to count the number of '1' bits in the binary representation of an integer. The intuitive approach is to perform a bitwise AND operation between the number and its predecessor, which will effectively turn off the rightmost '1' bit in each iteration. By counting the number of iterations required to reduce the number to zero, we can determine the count of '1' bits. | [Solution](./Bit-Manipulation/03.number-of-1-bits.md)|
+| [Single Number](https://leetcode.com/problems/single-number/) |  Refer the Solution | [Solution](./Bit-Manipulation/04.single-number.md)|
+| [Single Number 2](https://leetcode.com/problems/single-number-ii) | The problem involves finding a number that appears once in an array where every other number appears three times. The key insight is to use bit manipulation, focusing on each bit position across all numbers. If a bit appears a number of times that's not divisible by 3, it must be part of the unique number. | [Solution](./Bit-Manipulation/05.single-number-2.md)|
+| [Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range) | The problem requires finding the bitwise AND of all numbers between `left` and `right`, inclusive. Direct computation of the AND operation for all numbers in the range would be inefficient. Instead, we aim to find the common prefix or the highest bit position that both `left` and `right` share. | [Solution](./Bit-Manipulation/06.bitwise-and-of-numbers-range.md)|
 
 # Binary Tree General
 | Problem | Notes | Solution |
