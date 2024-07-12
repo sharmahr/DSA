@@ -181,27 +181,13 @@
 | [Word Search](https://leetcode.com/problems/word-search/description/) | The problem of determining if a word exists in a grid of characters can be solved using a backtracking approach. The intuition is to explore all possible paths in the grid by starting from each cell and recursively checking the neighboring cells to find a match for the given word. We can use a visited array to keep track of the cells that have been visited to avoid visiting the same cell multiple times. | [Solution](./Backtracking/07.word-search.md)|
 
 
-# Binary Tree General
+# Divide and Conquer
 | Problem | Notes | Solution |
 |:-------------|:--------------:|-------------:|
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
+| [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree) | The problem asks to convert a sorted array into a height-balanced Binary Search Tree (BST). The key insight is that the middle element of the sorted array should be the root of the BST to maintain balance. We can then recursively apply this idea to the left and right subarrays to construct the left and right subtrees. | [Solution](./Divide-And-Conquer/01.convert-sorted-array-to-binary-search-tree.md)|
+| [Sort List](https://leetcode.com/problems/sort-list) | Sorting a linked list can be efficiently accomplished using the merge sort algorithm. Merge sort is well-suited for linked lists because it does not require random access to elements, and it can be implemented with a consistent $$O(n \log n)$$ time complexity. | [Solution](./Divide-And-Conquer/02.sort-list.md)|
+| [Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree) | The problem involves constructing a QuadTree from a 2D binary grid. A QuadTree is a tree data structure in which each internal node has exactly four children. The basic idea is to recursively divide the grid into four quadrants until each quadrant contains only uniform values (either all 0s or all 1s). | [Solution](./Divide-And-Conquer/03.construct-quad-tree.md)|
+| [Merge K sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/description/) | Instead of repeatedly merging pairs of linked lists, we can use a min-heap to efficiently find the node with the smallest value among all the linked lists and add it to the merged list. This way, we can merge all the linked lists in a single pass. | [Solution](./Divide-And-Conquer/04.merge-k-sorted-lists.md)|
 
 
 # Binary Tree General
