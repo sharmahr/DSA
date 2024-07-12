@@ -248,24 +248,15 @@
 | [Coin Change](https://leetcode.com/problems/coin-change/description/) | The problem of finding the minimum number of coins to make up a given amount can be solved using dynamic programming. The intuition behind the solution is that for each amount, we can choose any coin denomination and recursively solve the subproblem for the remaining amount. We need to consider all possible coin denominations and find the minimum number of coins needed. | [Solution](./1D-DP/04.coin-change.md)|
 | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/description/) | The problem of finding the length of the longest increasing subsequence (LIS) can be solved using dynamic programming. The intuition behind the solution is to build the LIS by considering each element as a potential candidate for the LIS ending at that element. We can solve this problem by breaking it down into smaller subproblems and using the results of those subproblems to solve the larger problem. | [Solution](./1D-DP/05.longest-increasing-subsequence.md)|
 
-# Binary Tree General
+# Multidimensional DP
 | Problem | Notes | Solution |
 |:-------------|:--------------:|-------------:|
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
+| [Triangle](https://leetcode.com/problems/triangle) | The problem is to find the minimum path sum from the top to the bottom of a triangle of numbers, where each step can move to the adjacent numbers on the row below.  | [Solution](./Multidimensional-DP/01.triangle.md)|
+| [Maximum Path Sum](https://leetcode.com/problems/minimum-path-sum) | The problem requires finding the minimum path sum from the top-left to the bottom-right of a grid, where movement is allowed only down or right at any point. This can be efficiently solved using dynamic programming. | [Solution](./Multidimensional-DP/02.maximum-path-sum.md) |
+| [Unique Paths](https://leetcode.com/problems/unique-paths-ii/description/) | The problem requires finding the number of unique paths from the top-left corner to the bottom-right corner of a grid, where some cells may contain obstacles. Obstacles block the path and cannot be crossed. This can be efficiently solved using dynamic programming. | [Solution](./Multidimensional-DP/03.unique-paths.md) |
+| [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring) | To find the longest palindrome substring in a given string, one effective approach is to use the technique of expanding around center. This approach efficiently checks for palindromes by expanding from each character or pair of characters that might be the center of a palindrome. | [Solution](./Multidimensional-DP/04.longest-palidromic-substring.md) |
+| [Interleaving Strings](https://leetcode.com/problems/interleaving-string/) | To determine if `s3` can be formed by interleaving `s1` and `s2`, we can employ a recursive approach with memoization. This problem can be visualized as a tree of decisions where at each step, we decide whether to take the next character from `s1` or `s2` to match the current character of `s3`. | [Solution](./Multidimensional-DP/05.interleaving-string.md) |
+| [Edit Distance](https://leetcode.com/problems/edit-distance/description) | The problem involves finding the minimum number of operations required to convert `word1` into `word2` using three operations: insertion, deletion, or substitution of a character. The goal is to determine the minimum edit distance between two strings. | [Solution](./Multidimensional-DP/06.edit-distance.md) |
+| [Best Time to Buy and Sell Stocks 3](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii) | The problem involves maximizing profit from at most two transactions of buying and selling stocks. The key is to track the best times to buy and sell to achieve the maximum profit possible. | [Solution](./Multidimensional-DP/07.best-time-to-buy-sell-stock-3.md) |
+| [Best Time to Buy and Sell Stocks 4](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv) | The problem requires maximizing profit by performing at most \( k \) transactions in a sequence of stock prices. If \( k \) is sufficiently large relative to the number of days \( n \), we can treat the problem similarly to the case of unlimited transactions (where we can buy and sell on the same day if it's profitable). Otherwise, we need an efficient dynamic programming solution to track the maximum profit up to each day with up to \( k \) transactions. | [Solution](./Multidimensional-DP/08.best-time-to-buy-sell-stock-4.md) |
+| [Maximal Square](https://leetcode.com/problems/maximal-square/description) | The problem requires finding the size of the largest square of 1s in a binary matrix. The approach involves using dynamic programming to efficiently compute the size of the largest square ending at each cell of the matrix. | [Solution](./Multidimensional-DP/09.maximal-square.md) |
