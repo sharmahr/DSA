@@ -228,27 +228,16 @@
 | [Single Number 2](https://leetcode.com/problems/single-number-ii) | The problem involves finding a number that appears once in an array where every other number appears three times. The key insight is to use bit manipulation, focusing on each bit position across all numbers. If a bit appears a number of times that's not divisible by 3, it must be part of the unique number. | [Solution](./Bit-Manipulation/05.single-number-2.md)|
 | [Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range) | The problem requires finding the bitwise AND of all numbers between `left` and `right`, inclusive. Direct computation of the AND operation for all numbers in the range would be inefficient. Instead, we aim to find the common prefix or the highest bit position that both `left` and `right` share. | [Solution](./Bit-Manipulation/06.bitwise-and-of-numbers-range.md)|
 
-# Binary Tree General
+# Math
 | Problem | Notes | Solution |
 |:-------------|:--------------:|-------------:|
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
+| [Palindrome Number](https://leetcode.com/problems/palindrome-number) | The problem is to determine if an integer \( x \) is a palindrome, i.e., reads the same backward as forward. A negative number should not be considered a palindrome due to the negative sign. The simplest way to approach this is by converting the integer to a string and then checking if this string is a palindrome. | [Solution](./Math/01.palindrome-number.md)|
+| [Plus One](https://leetcode.com/problems/plus-one/description/) | The problem is to increment a large integer represented as an array of digits by one. The intuition is to start from the least significant digit (rightmost) and increment it by one. If the digit becomes 10, we need to set it to 0 and carry over the increment to the next digit. We repeat this process until we find a digit less than 9 or reach the most significant digit (leftmost). | [Solution](./Math/02.plus-one.md) |
+| [Factorial Trailing Zeros](https://leetcode.com/problems/factorial-trailing-zeroes) | The problem requires us to find the number of trailing zeros in the factorial of a given integer \( n \). Trailing zeros are produced by factors of 10, and factors of 10 are made up of pairs of 2 and 5. In factorials, there are always more factors of 2 than factors of 5, so the number of trailing zeros is determined by the number of factors of 5 in \( n! \). | [Solution](./Math/03.factorial-trailing-zeroes.md) |
+| [Square Root](https://leetcode.com/problems/sqrtx) | The problem requires finding the integer square root of a given non-negative integer \( x \). This is essentially finding the largest integer \( \sqrt{x} \) such that \( \text{result}^2 \leq x \). | [Solution](./Math/04.sqrt.md) |
+| [Power](https://leetcode.com/problems/powx-n) | The problem requires computing the power of a number `x` raised to an integer `n`. The challenge is to optimize this computation, especially handling negative exponents efficiently. | [Solution](./Math/05.power.md) |
+| [Maximum Points on a Line](https://leetcode.com/problems/max-points-on-a-line) | The problem requires finding the maximum number of points that lie on the same straight line in a 2D plane given a set of points. This involves understanding how to calculate slopes between points and handling special cases like vertical lines. | [Solution](./Math/06.max-points-on-line.md) |
+
 
 # Binary Tree General
 | Problem | Notes | Solution |
