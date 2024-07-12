@@ -239,49 +239,14 @@
 | [Maximum Points on a Line](https://leetcode.com/problems/max-points-on-a-line) | The problem requires finding the maximum number of points that lie on the same straight line in a 2D plane given a set of points. This involves understanding how to calculate slopes between points and handling special cases like vertical lines. | [Solution](./Math/06.max-points-on-line.md) |
 
 
-# Binary Tree General
+# 1-D DP
 | Problem | Notes | Solution |
 |:-------------|:--------------:|-------------:|
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-
-# Binary Tree General
-| Problem | Notes | Solution |
-|:-------------|:--------------:|-------------:|
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
+| [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/description/) | The problem of climbing stairs can be solved using dynamic programming. The intuition behind the solution is that to reach the nth step, we can either climb 1 step from the (n-1)th step or 2 steps from the (n-2)th step. This forms a recursive pattern similar to the Fibonacci sequence. | [Solution](./1D-DP/01.climbing-stairs.md)|
+| [House Robber](https://leetcode.com/problems/house-robber/) | The problem of house robber can be solved using dynamic programming. The intuition behind the solution is that at each house, we have two options: either rob the current house and add its amount to the maximum amount robbed from two houses before, or skip the current house and consider the maximum amount robbed from the previous house. | [Solution](./1D-DP/02.house-robber.md)|
+| [Word break](https://leetcode.com/problems/word-break/) | The problem of word break can be solved using dynamic programming. The intuition behind the solution is to determine if the given string can be segmented into a space-separated sequence of one or more dictionary words. We can solve this problem by considering subproblems and using the results of smaller subproblems to solve larger ones. | [Solution](./1D-DP/03.word-break.md)|
+| [Coin Change](https://leetcode.com/problems/coin-change/description/) | The problem of finding the minimum number of coins to make up a given amount can be solved using dynamic programming. The intuition behind the solution is that for each amount, we can choose any coin denomination and recursively solve the subproblem for the remaining amount. We need to consider all possible coin denominations and find the minimum number of coins needed. | [Solution](./1D-DP/04.coin-change.md)|
+| [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/description/) | The problem of finding the length of the longest increasing subsequence (LIS) can be solved using dynamic programming. The intuition behind the solution is to build the LIS by considering each element as a potential candidate for the LIS ending at that element. We can solve this problem by breaking it down into smaller subproblems and using the results of those subproblems to solve the larger problem. | [Solution](./1D-DP/05.longest-increasing-subsequence.md)|
 
 # Binary Tree General
 | Problem | Notes | Solution |
