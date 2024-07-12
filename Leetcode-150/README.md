@@ -154,27 +154,12 @@
 | [Course Schedule](https://leetcode.com/problems/course-schedule/) | To determine if it is possible to finish all courses, we need to check if there are any cycles in the dependency graph. If there are no cycles, it means that all courses can be completed. We can use depth-first search (DFS) to detect cycles in the graph. | [Solution](./Graph-General/05.course-schedule.md) |
 | [Course Schedule 2](https://leetcode.com/problems/course-schedule-ii/) | To find a valid course schedule, we can use topological sorting. If there is a cycle in the dependency graph, it means that there is no valid course schedule. We can perform a depth-first search (DFS) on the graph and check for cycles. If no cycles are detected, we can generate a valid course schedule by adding the courses to a stack in the order of completion. | [Solution](./Graph-General/06.course-schedule-2.md) |
 
-# Binary Tree General
+# Graph BFS
 | Problem | Notes | Solution |
 |:-------------|:--------------:|-------------:|
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
-|   |   | |
+| [Snakes and Ladder](https://leetcode.com/problems/snakes-and-ladders) | The problem of finding the shortest path to reach the last cell in a snakes and ladders board can be modeled as a shortest path problem on an unweighted graph. Each cell on the board can be seen as a node, and a dice roll can be seen as an edge to another node. By using a Breadth-First Search (BFS), we can explore all possible paths in the shortest number of moves. | [Solution](./Graph-BFS/01.snakes-and-ladders.md)|
+| [Minimum Genetic Mutation](https://leetcode.com/problems/minimum-genetic-mutation) | To transform the start gene to the end gene with the minimum number of mutations, we can think of each gene as a node and each valid mutation as an edge in an unweighted graph. The problem can be solved using Breadth-First Search (BFS) to find the shortest path from the start gene to the end gene, as BFS is well-suited for finding the shortest path in an unweighted graph. | [Solution](./Graph-BFS/02.minimum-genetic-mutation.md)|
+| [Word Ladder](https://leetcode.com/problems/word-ladder) | To find the shortest transformation sequence from `beginWord` to `endWord`, we can use a breadth-first search (BFS) approach. We can treat each word as a node in a graph, and an edge exists between two words if they differ by exactly one letter. By performing BFS starting from `beginWord`, we can find the shortest path to reach `endWord`. | [Solution](./Graph-BFS/03.word-ladder.md) |
 
 # Binary Tree General
 | Problem | Notes | Solution |
